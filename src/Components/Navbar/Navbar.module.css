@@ -1,0 +1,43 @@
+.mainNav{
+    display:flex;
+    height:70px;
+    background-color: #fff;
+}
+.mainNavLogo{
+    display: flex;
+    padding:20px;
+    margin-left:40px ;
+    flex:0.7
+}
+.mainNavLogo > img{
+    height:28px;
+}
+.mainNavLinks{
+    display: flex;
+    flex: 0.3;
+}
+.mainNavLinks >a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    margin:40px;
+    font-size: 16px;
+}
+.navContainer{
+    height:30px;
+    background-color:#D3D5D6;
+    color:black;
+    padding-top:10px;
+}
+.navLinks{
+    margin-left: 50%;
+}
+.navLinks > a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    margin:40px;
+    font-size: 16px;
+}

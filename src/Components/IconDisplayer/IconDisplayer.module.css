@@ -1,0 +1,19 @@
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+}
+.iconContainer{
+    display: flex;
+    flex-direction: column;
+}
+.iconContainer >img{
+    height:100px;
+    object-fit: contain;
+}
+.iconContainer >span{
+    color: #1C60FF;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}

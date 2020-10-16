@@ -1,0 +1,50 @@
+.usabilityContainer{
+    height: 100%;
+    width:100%;
+    background-image: url('/Path12.png');
+    background-repeat: no-repeat;
+    background-size:100% 100%;    
+}
+.usabilityTop{
+    display: flex;
+}
+.surface{
+    height:50vh;
+    opacity: 60%;
+}
+.usabilityTitle{
+    font-size: 36px;
+    font-weight: bold;
+    margin-left:25%
+}
+.usabilityMiddle{
+    height:750px;
+    display: flex;
+    flex-direction: column;
+    background-color:#F3F3F3;
+    z-index: 100;
+    margin-left:6%;
+    margin-right:6%;
+    margin-top:-18%;
+    border-radius: 10px;
+    border: 2px solid #1071EF
+}
+.usabilityBottom{
+    color:#fff;
+    font-size: 23px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 30px;
+}
+.usabilityBottom >h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left:90px;
+    font-weight: 400;
+}
+.usabilityBottom >a {
+    text-decoration: none;
+    color:#fff;
+    margin-left:40%;
+    font-weight: bold;
+}

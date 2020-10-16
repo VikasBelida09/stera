@@ -1,0 +1,39 @@
+.mainFeaturesContainer{
+    background-color: #ECEBEB;
+    height:625px;
+    width:100%;
+    padding-top:20px;
+}
+.mainFeaturesTop{
+    display: flex;
+}
+.mainFeaturesTop > img{
+    position: absolute;
+    right:0;
+    height:600px;
+    width:100px;
+    overflow: hidden;
+}
+.mainFeaturesTop > h5{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainFeatures{
+    background-color:#d3d3d3;
+    height:425px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    border:1px solid #BCB9B9;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.border{
+    margin-bottom: 10px;
+    height:8px;
+    width:100%;
+    background-color:#5B90FB;
+}

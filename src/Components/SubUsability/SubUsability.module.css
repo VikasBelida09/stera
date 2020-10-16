@@ -1,0 +1,31 @@
+.subUsability{
+    display: flex;
+    height:180px;
+}
+.image >img{
+    height:140px;
+    object-fit: contain;
+}
+.image{
+    margin: 20px;
+    margin-left: 40px;
+}
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+.descriptionContainer >h5{
+  font-size: 26px;
+  font-weight: bold;
+  color:#5B90FB;
+  margin-top:24px;
+  margin-bottom:5px;
+}
+.descriptionContainer >p{
+    font-size: 23;
+    font-weight: 500;
+    color:#85888D;
+    margin-top:5px;
+    width:500px;
+}
