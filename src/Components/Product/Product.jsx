@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-// import { Carousel } from "antd";
 import classes from "./Product.module.css";
-// import product1 from "../../Assets/product1.png";
-// import product2 from "../../Assets/product2.png";
-// import product3 from "../../Assets/product3.png";
-// import product4 from "../../Assets/product4.png";
+import Carousel from "react-bootstrap/Carousel";
+import product1 from "../../Assets/product1.png";
+import product2 from "../../Assets/product2.png";
+import product3 from "../../Assets/product3.png";
+import product4 from "../../Assets/product4.png";
 import flipkart from "../../Assets/flipkart.png";
 import amazon from "../../Assets/amazon.png";
 function Product() {
@@ -17,7 +17,46 @@ function Product() {
       <div className={classes.miniDivider}></div>
       <div className={classes.productContainer}>
         <div className={classes.productLeftView}>
-          <div></div>
+          <div className={classes.carouselContainer}>
+            <Carousel>
+              <Carousel.Item style={{ height: "430px"}}>
+                <img
+                  style={{ height: "430px", width:"450" }}
+                  className="d-block w-100"
+                  src={product1}
+                  alt="prod1"
+                />
+              </Carousel.Item>
+              <Carousel.Item style={{ height: "430px"}}>
+                <img
+                  style={{ height: "430px", width:"450" }}
+                  className="d-block w-100"
+                  src={product2}
+                  alt="prod2"
+                />
+              </Carousel.Item>
+              <Carousel.Item style={{ height: "430px"}}>
+                <img
+                  style={{ height: "430px", width:"450" }}
+                  className="d-block w-100"
+                  src={product3}
+                  alt="prod3"
+                />
+              </Carousel.Item>
+              <Carousel.Item style={{ height: "430px"}}>
+                <img
+                  style={{ height: "430px", width:"450" }}
+                  className="d-block w-100"
+                  src={product4}
+                  alt="prod4"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </div>
+           <div className={classes.broucherContainer}>
+             <span title="broucher">broucher</span>
+             <span title="certifications">certifications</span>
+           </div> 
         </div>
         <div className={classes.productRightView}>
           <div>
@@ -85,28 +124,33 @@ Stainless Steel Shelf, 1 x Chinese Manua`}</pre>
               BUY NOW
             </button>
           </div>
-      
         </div>
       </div>
       {isHidden && (
-            <div className={classes.buyLinks}>
-              <div className={classes.shoppingLinks}>
-                <div className={classes.amazon}>
-                  <img src={amazon} alt="amazon" />
-                </div>
-                <div className={classes.flipkart}>
-                  <img src={flipkart} alt="flipkart" />
-                </div>
-              </div>
-               <div className={classes.bulkorders}>
-                <span title="For">For</span>
-                <span title="Bulk" className={classes.bulk}>Bulk</span>
-                <span title="Orders">Orders:</span>
-               </div>
-               <span className={classes.phone}><strong>Call us:</strong> 8088954323</span>
-               <span className={classes.email}><strong>Email us:</strong> sales@steracare.com </span>
+        <div className={classes.buyLinks}>
+          <div className={classes.shoppingLinks}>
+            <div className={classes.amazon}>
+              <img src={amazon} alt="amazon" />
             </div>
-          )}
+            <div className={classes.flipkart}>
+              <img src={flipkart} alt="flipkart" />
+            </div>
+          </div>
+          <div className={classes.bulkorders}>
+            <span title="For">For</span>
+            <span title="Bulk" className={classes.bulk}>
+              Bulk
+            </span>
+            <span title="Orders">Orders:</span>
+          </div>
+          <span className={classes.phone}>
+            <strong>Call us:</strong> 8088954323
+          </span>
+          <span className={classes.email}>
+            <strong>Email us:</strong> sales@steracare.com
+          </span>
+        </div>
+      )}
     </div>
   );
 }
