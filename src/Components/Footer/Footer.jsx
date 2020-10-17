@@ -12,7 +12,7 @@ function Footer() {
             <div className={classes.footerMiddle}>
                  <div className={classes.footerMiddle1}>
                      <a href="#about">About us</a>
-                     <a href="#prod">The Product</a>
+                     <a href="#product">The Product</a>
                      <a href="#features">Features</a>
                  </div>
                  <div className={classes.footerMiddle2}>

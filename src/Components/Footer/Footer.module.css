@@ -13,6 +13,8 @@
     font-weight: 800;
     font-size: 26px;
     margin-top: 16px;
+    color:#F3E8E8;
+
 }
 .footerMiddle{
     display: flex;
@@ -51,6 +53,9 @@
     flex:0.2;
     flex-direction: column;
     margin-top: 40px;
+}
+.footerRight >h4{
+  color:#F3E8E8;
 }
 .footerRightIcons{
     margin-top: -5px;

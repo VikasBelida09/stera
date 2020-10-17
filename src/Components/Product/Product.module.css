@@ -1,0 +1,152 @@
+
+.divider {
+  height: 50px;
+  width: 100vw;
+  background-color: #262626;
+  margin-bottom: 0px;
+}
+.buyLinks{
+    width:100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI';
+}
+.divider > h5 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 45%;
+  margin-top: 0px;
+}
+.productContainer {
+  display: flex;
+  height: fit-content;
+  margin-bottom: 40px;
+}
+.productLeftView {
+  display: flex;
+  flex: 0.5;
+}
+.productRightView {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+.uv {
+  color: #5b90fb;
+  font-size: 39px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.disinfect {
+  font-size: 39px;
+  font-weight: bold;
+  color: #545353;
+}
+.kills {
+  color: #85888d;
+  font-size: 18px;
+}
+.cv {
+  color: #5b90fb;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -13px;
+}
+.specifications {
+  color: #545353;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+.subProdInfo {
+  display: flex;
+}
+.subProdSpan {
+  color: #6d6868;
+  font-size: 19px;
+  font-weight: bold;
+  width: 175px;
+}
+.subProdPara {
+  font-size: 18px;
+  font-weight: 500;
+  color: #85888d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  color: #545353;
+}
+.amount {
+  font-size: 37px;
+  font-weight: bold;
+}
+.buy {
+  display: flex;
+}
+.buyBtn {
+  width: 180px;
+  background-color: #5b90fb;
+  color: #efe8e8;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #efe8e8;
+  border-radius: 35px;
+  margin-left: 20%;
+  outline-width: 0;
+  cursor: pointer;
+}
+.miniDivider {
+  height: 8px;
+  width: 100%;
+  background-color: #5b90fb;
+  margin-bottom: 35px;
+}
+.amazon,
+.flipkart{
+    height:120px;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+.amazon >img ,
+.flipkart >img {
+    height: 100px;
+    width:230px;
+    cursor: pointer;
+}
+.shoppingLinks{
+    display: flex;
+    margin-left: 28%;
+    margin-right: auto;
+    width:100%;
+}
+
+.bulkorders > span{
+   font-size: 27px;
+   font-weight: bold;
+   padding-left: 5px;
+}
+.bulkorders{
+   margin-left:40%;
+   margin-top: -5%;
+   margin-bottom: 0px;
+}
+.bulk{
+    color:#5b90fb;
+}
+.phone,.email{
+    font-size: 27px;
+    color:#85888D;
+    margin-left:39%;
+    margin-top: 8px;
+}
+.email{
+    margin-left: 37%;
+}
