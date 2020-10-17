@@ -9,7 +9,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="product">
       <Product />
+      </div>
       <MainFeatures />
       <div className="usability">
         <Usability />

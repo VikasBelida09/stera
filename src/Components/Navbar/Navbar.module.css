@@ -28,7 +28,8 @@
     height:30px;
     background-color:#D3D5D6;
     color:black;
-    padding-top:10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 .navLinks{
     margin-left: 50%;
