@@ -1,5 +1,6 @@
 .infoContainer {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
   width: 100vw;
   max-width: 100vw;
   background-image: url("../../Assets/sterabgi.png");
@@ -7,13 +8,13 @@
   background-size: 100% 100%;
 }
 .infoBackContainer {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   max-width: 100vw;
   background-image: url("../../Assets/Path1.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 98vw, 100vh;
-  overflow-x: hidden;
+  background-size: cover
 }
 .surface1 {
   height: 60vh;

@@ -6,7 +6,8 @@ import image1 from "../../Assets/image1.png";
 import image2 from "../../Assets/image2.png";
 import image3 from "../../Assets/image3.png";
 import image4 from "../../Assets/image4.png";
-const email=`stexxxjia@gmail.com`
+import top from "../../Assets/Group21.svg";
+const email = `stexxxjia@gmail.com`;
 function Usability() {
   return (
     <div className={classes.usabilityContainer} id="usability">
@@ -42,10 +43,15 @@ Medical Equipment like Intubation tubes"
 objects like towels, scissors"
         />
       </div>
-    <div className={classes.usabilityBottom}>
+      <div className={classes.usabilityBottom}>
         <a href="#FAQ">FAQS</a>
-        <h4>{`Email us: ${email}`}</h4>
-    </div>
+        <div className={classes.lastRow}>
+          <h4>{`Email us: ${email}`}</h4>
+          <a href="#top">
+            <img src={top} alt="top" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

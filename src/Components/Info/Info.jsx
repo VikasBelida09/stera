@@ -11,7 +11,7 @@ import insta from '../../Assets/instagram.svg';
 import linkedin from '../../Assets/linkedin.svg'
 function Info() {
   return (
-    <div className={classes.infoContainer}>
+    <div className={classes.infoContainer} id="top">
       <div className={classes.infoBackContainer}>
         <img src={surface2} alt="surface2" className={classes.surface1} />
       </div>
