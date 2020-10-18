@@ -71,7 +71,7 @@ function Product() {
           <span title="cv" className={classes.cv}>
             corona virus
           </span>
-          <span className={classes.specifications} title="specifications">
+          <span className={classes.specifications} title="specifications" id="specifications">
             Specifications
           </span>
           <div className={classes.productInfo}>

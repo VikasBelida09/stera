@@ -9,7 +9,7 @@ function Navbar() {
             <img src={logo} alt="steralogo"/>
           </div>
           <div className={classes.mainNavLinks}>
-            <a href="#product">About us</a>
+            <a href="#aboutus">About us</a>
             <a href="#features">Contact us</a>
           </div>
       </div>

@@ -23,8 +23,9 @@
     margin-right: auto;
 }
 .mainFeatures{
+    margin-top: 8vh;
     background-color:#d3d3d3;
-    height:425px;
+    height:fit-content;
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
@@ -38,3 +39,19 @@
     width:100%;
     background-color:#5B90FB;
 }
+@media screen and (max-width: 730px) {
+    .mainFeatures{
+        grid-template-columns: auto auto auto auto;
+    }
+    .mainFeaturesContainer{
+        height: fit-content;
+    }     
+}
+@media screen and (max-width: 630px) {
+    .mainFeatures{
+        grid-template-columns: auto auto auto;
+    }
+    .mainFeaturesContainer{
+        height: fit-content;
+    }     
+  }
