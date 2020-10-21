@@ -1,0 +1,46 @@
+.contactHeader {
+  margin-top: 4vh;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.contactHeader > img {
+  margin-left: 5vw;
+  height: 28px;
+  object-fit: contain;
+}
+.link,
+.link:hover {
+  margin-top: 2vh;
+  margin-right: 5vw;
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+  font-size: 18px;
+}
+.breadCrumb {
+  margin-left:2.6vw;
+  margin-top: 6vh;  
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+.breadCrumb > .links:hover,
+.links {
+  text-decoration: none;
+  color: #d2d1d1;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+.slash {
+  font-size: 26px;
+  color: #d2d1d1;
+  font-weight: bold;
+}
+.active, .active:hover{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    color:#5B90FB;
+}

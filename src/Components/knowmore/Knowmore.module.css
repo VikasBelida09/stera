@@ -1,0 +1,142 @@
+.knowMoreContainer{
+    width:100%
+}
+.knowMoreHeader {
+  margin-top: 4vh;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.knowMoreHeader > img {
+  margin-left: 5vw;
+  height: 28px;
+  object-fit: contain;
+}
+.link,
+.link:hover {
+  margin-top: 2vh;
+  /* margin-right: 5vw;   */
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+  font-size: 18px;
+}
+.knowMoreBanner{
+    display: flex;
+    height:60vh;
+    max-height: 60vh;
+    background-image: url('../../Assets/Rect.png'), url('../../Assets/product.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: 35% 100%, 65% 100%;
+}
+.surface > img{
+    margin-top: 2vh;
+    height:56vh;
+    object-fit: contain;
+    margin-bottom: 2vh;
+    margin-left: 22vw;
+    opacity: 0.7;
+}
+.bannerLogo{
+    height:6vh;
+    object-fit: contain;
+    margin-top: 14vh;
+    margin-left: -1vw;
+}
+.blue{
+    color: #5B90FB;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    margin-left: -13vw;
+    justify-content: space-between;
+}
+.spanTitle{
+    margin-left: 5vw;
+    font-size: 14px;
+    font-weight: 650;
+    margin-bottom: 2vh;
+}
+.aboutUs{
+    display: flex;
+    justify-content: center;
+    color:#5B90FB;
+    font-weight: bold;
+    font-size: 23px;
+}
+.header{
+    text-align: center;
+    font-size: 28px;
+    font-weight:bold;
+    margin: 0px;
+}
+.span{
+    color: #5B90FB;
+}
+.body{
+    margin-left: auto;
+    margin-right: auto;
+    width:70vw;
+}
+.details{
+    font-size: 17px;
+    color:#646567
+}
+.questions{
+    font-size: 22px;
+    font-weight: bold;
+    color: #262626;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #646567;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+@media screen and (max-width: 480px){
+    .surface > img{
+        height:36vh;
+        width: 60vw;
+        margin-left: 10vw;
+    }
+    .knowMoreBanner{
+        height:40vh;
+        max-height: 40vh;
+    }
+    .bannerLogo{
+        height:6vh;
+        width:40vw;
+        margin-top: 8vh;
+        margin-left: -15vw;
+    }
+    .spanTitle{
+        margin-left: -19vw;
+        margin-bottom: 1vh;
+    }
+}
+@media screen and (max-width: 780px){
+    .surface > img{
+        height:36vh;
+        width: 60vw;
+        margin-left: 10vw;
+    }
+    .knowMoreBanner{
+        height:40vh;
+        max-height: 40vh;
+    }
+    .bannerLogo{
+        height:6vh;
+        width:30vw;
+        margin-top: 6vh;
+        margin-left: -15vw;
+    }
+    .spanTitle{
+        margin-left: -19vw;
+        margin-bottom: 1vh;
+    }
+}

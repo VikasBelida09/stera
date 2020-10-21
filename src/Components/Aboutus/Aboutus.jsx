@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Aboutus.module.css";
+import { Link } from "react-router-dom";
 function Aboutus() {
   return (
     <div className={classes.aboutUsContianer} id="aboutus">
@@ -38,11 +39,17 @@ viruses & bacteria.`}</pre>
               About <strong className={classes.uv}>UV</strong> Disinfection
               Shield
             </span>
-            <pre className={classes.aboutUVInfo}>{`The brand new UV Disinfection shield is here! It’s a portable
+            <pre
+              className={classes.aboutUVInfo}
+            >{`The brand new UV Disinfection shield is here! It’s a portable
 disinfection cabinet That uses the UV disinfection and sterilization`}</pre>
           </div>
         </div>
-        <button type="button" className={classes.knowMoreBtn}>Know more</button>
+        <Link to="/knowMore">
+          <button type="button" className={classes.knowMoreBtn}>
+            Know more
+          </button>
+        </Link>
       </div>
     </div>
   );

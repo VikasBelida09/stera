@@ -1,0 +1,65 @@
+.para,.para1 {
+  font-size: 16x;
+  font-weight: 450;
+  color: #85888d;
+  margin-left: 4vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+.para1{
+    margin-top: 4vh;
+    width: 19vw;
+}
+.formContainer{
+    margin-left: 4vw;
+    margin-top: 4vh;
+}
+.input{
+    margin-top: 2vh;
+}
+.input >input{
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid #289BE8;
+    color:#0C0C0C;
+    padding:0.8vh;
+    /* box-shadow: 0 1px 3px #289BE8; */
+    outline-width: 0;
+}
+.input > textarea{
+    min-width: 28vw;
+    border-radius: 10px;
+    border: 1px solid #289BE8;
+    color:#0C0C0C;
+    padding:0.8vh;
+    /* box-shadow: 0 1px 3px #289BE8; */
+    outline-width: 0;
+}
+.submit{
+    font-size: 18px;
+    font-weight: 500;
+    color:#F4F5F9;
+    background-color:#289BE8;
+    border: 1px solid #289BE8;
+    border-radius: 8px;
+    text-align:center;
+    padding-left: auto;
+    padding-right: auto;
+    width:90px;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+}
+.sentQuery{
+    margin-left: 3vw;
+    font-size: 14px;
+    font-weight: 500;
+    color:#85888d
+}
+.email{
+    margin-top: 45vh;
+    margin-bottom: 2vh;
+    color: #85888D;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}

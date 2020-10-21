@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import logo from '../../Assets/steralogo.png'
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
@@ -10,7 +11,7 @@ function Navbar() {
           </div>
           <div className={classes.mainNavLinks}>
             <a href="#aboutus">About us</a>
-            <a href="#features">Contact us</a>
+            <Link to="/contact">Contact us</Link>
           </div>
       </div>
       <div className={classes.navContainer}>
