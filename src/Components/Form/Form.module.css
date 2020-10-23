@@ -2,23 +2,23 @@
   font-size: 16x;
   font-weight: 450;
   color: #85888d;
-  margin-left: 4vw;
+  margin-left: 6vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
 .para1{
-    margin-top: 4vh;
+    margin-top: 6vh;
     width: 19vw;
 }
 .formContainer{
-    margin-left: 4vw;
+    margin-left: 6vw;
     margin-top: 4vh;
 }
 .input{
     margin-top: 2vh;
 }
 .input >input{
-    width: 20vw;
+    width: 30vw;
     border-radius: 10px;
     border: 1px solid #289BE8;
     color:#0C0C0C;
@@ -27,7 +27,7 @@
     outline-width: 0;
 }
 .input > textarea{
-    min-width: 28vw;
+    min-width: 35vw;
     border-radius: 10px;
     border: 1px solid #289BE8;
     color:#0C0C0C;
@@ -62,4 +62,33 @@
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+}
+
+@media screen and (max-width: 780px){
+    .input >input{
+        width: 70vw;
+    }
+    .input > textarea{
+        min-width: 78vw;
+    }
+    .para1{
+        width: 34vw;
+    }
+    .email{
+        margin-top: 25vh;
+    }
+}
+@media screen and (max-width: 480px){
+    .input >input{
+        width: 70vw;
+    }
+    .input > textarea{
+        min-width: 78vw;
+    }
+    .para1{
+        width: 70vw;
+    }
+    .email{
+        margin-top: 25vh;
+    }
 }

@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Contact.module.css";
 import logo from "../../Assets/steralogo.png";
 import { Link, useLocation } from "react-router-dom";
 import Form from "../Form/Form";
 import Footer from "../Footer/Footer";
+import QuestionAnswer from "../QuestionAnswer/QuestionAnswer";
+import { qa } from "../../data/data";
+import Divider from "../Divider/Divider";
 function Contact() {
   const { pathname } = useLocation();
   let path = pathname.substr(1);
+  const [hide, setHide] = useState(false);
+  const Qa = qa.slice(0, 3).map((item) => {
+    return (
+      <QuestionAnswer
+        key={item.question}
+        question={item.question}
+        answer1={item.answer1}
+        answer2={item?.answer2}
+        answer3={item?.answer3}
+        answer4={item?.answer4}
+        answer5={item?.answer5}
+      />
+    );
+  });
+  const QaFull = qa.slice(4).map((item) => {
+    return (
+      <QuestionAnswer
+        key={item.question}
+        question={item.question}
+        answer1={item.answer1}
+        answer2={item?.answer2}
+        answer3={item?.answer3}
+        answer4={item?.answer4}
+        answer5={item?.answer5}
+      />
+    );
+  });
   return (
     <div>
       <div className={classes.contactHeader}>
@@ -28,7 +58,23 @@ function Contact() {
           FAQS
         </Link>
       </div>
-      {path==='contact'?<Form />:<>FAQS will be created tomorrow</>}
+      {path === "contact" ? (
+        <Form />
+      ) : (
+        <>
+          {Qa}
+          {!hide && (
+            <span
+              title="seemore"
+              className={classes.seeMore}
+              onClick={() => setHide(true)}
+            >{`See More >`}</span>
+          )}
+          {hide && QaFull}
+          <p className={classes.email}>Email us: stexxxjia@gmail.com</p>
+        </>
+      )}
+      <Divider />
       <Footer />
     </div>
   );

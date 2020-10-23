@@ -79,7 +79,12 @@ function Form() {
         >
           Your Query has been sent!
         </span>
-        <button type="button" className={classes.submit} onClick={onSubmit}>
+        <button
+          type="button"
+          className={classes.submit}
+          onClick={onSubmit}
+          style={visible ? {} : {marginLeft: "25vw"}}
+        >
           submit
         </button>
       </div>

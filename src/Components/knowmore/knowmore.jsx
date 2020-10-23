@@ -4,7 +4,7 @@ import logo from "../../Assets/steralogo.png";
 import { Link } from "react-router-dom";
 import surface from "../../Assets/surface2.png";
 import Footer from "../Footer/Footer";
-import Divider from '../Divider/Divider'
+import Divider from "../Divider/Divider";
 function knowmore() {
   return (
     <div className={classes.knowMoreContainer}>
@@ -82,7 +82,9 @@ function knowmore() {
               others USFDA approved.
             </p>
           </div>
-          <span className={classes.aboutUs}>FAQS</span>
+          <Link to="/faq" className={classes.link}>
+            <span className={classes.aboutUs}>FAQS</span>
+          </Link>
           <span className={classes.email}>Email us: stexxxjia@gmail.com</span>
         </div>
       </div>
