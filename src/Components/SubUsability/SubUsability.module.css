@@ -1,31 +1,46 @@
-.subUsability{
-    display: flex;
-    height:180px;
+.subUsability {
+  display: flex;
+  min-height: 30vh;
+  height: fit-content;
 }
-.image >img{
-    height:140px;
-    object-fit: contain;
+.image > img {
+  height: 25vh;
+  object-fit: contain;
 }
-.image{
-    margin: 20px;
-    margin-left: 40px;
+.image {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-left: 5vw;
 }
-.descriptionContainer{
-    display: flex;
-    flex-direction: column;
-    margin-left:20px;
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
 }
-.descriptionContainer >h5{
+.descriptionContainer > h5 {
   font-size: 26px;
   font-weight: bold;
-  color:#5B90FB;
-  margin-top:24px;
-  margin-bottom:5px;
+  color: #5b90fb;
+  margin-top: 24px;
+  margin-bottom: 5px;
 }
-.descriptionContainer >p{
-    font-size: 23;
-    font-weight: 500;
-    color:#85888D;
-    margin-top:5px;
-    width:40vw;
+.descriptionContainer > p {
+  font-size: 23;
+  font-weight: 500;
+  color: #85888d;
+  margin-top: 2vh;
+  width: 40vw;
+}
+@media screen and (max-width: 480px) {
+  .image > img {
+    height: 25vh;
+    width: 30vw;
+    object-fit: contain;
+  }
+  .image {
+    padding-bottom: auto;
+  }
+  .descriptionContainer > h5 {
+    font-size: 24px;
+  }
 }

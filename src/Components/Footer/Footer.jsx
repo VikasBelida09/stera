@@ -4,7 +4,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Link } from "react-router-dom";
-import { HashLink as HLink } from 'react-router-hash-link';
+import { HashLink as HLink } from "react-router-hash-link";
 function Footer() {
   return (
     <div className={classes.footerContainer}>

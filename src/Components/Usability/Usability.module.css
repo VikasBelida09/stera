@@ -17,10 +17,11 @@
 .usabilityTitle {
   font-size: 36px;
   font-weight: bold;
-  margin-left: 25%;
+  margin-left: 25vw;
 }
 .usabilityMiddle {
   height: fit-content;
+  /* width: fit-content; */
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
@@ -40,22 +41,45 @@
   justify-content: center;
   margin-top: 30px;
 }
-.lastRow{
+.lastRow {
   display: flex;
+  justify-content: center;
+  position: relative;
 }
 .lastRow > h4 {
   margin-top: 10px;
-  margin-left: 30vw;
   margin-bottom: 5px;
+  margin-right: 5vw;
   font-weight: 400;
   color: #f3e8e8;
 }
-.lastRow >a {
-  margin-left: 29vw;
+.lastRow > a {
+  position: absolute;
+  right: 10vw;
+  bottom: 0.05vh;
 }
 .usabilityBottom > a {
   text-decoration: none;
   color: #fff;
-  margin-left: 40%;
+  text-align: center;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .lastRow > a {
+    position: absolute;
+    right: 10vw;
+    bottom: 5vh;
+  }
+  .surface {
+    height: 30vh;
+    opacity: 60%;
+  }
+  .usabilityTitle {
+    margin-top: 3vh;
+    margin-left: -6vw;
+    font-size: 28px;
+  }
+  .usabilityMiddle {
+    margin-top: -18vh;
+  }
 }

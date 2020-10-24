@@ -1,44 +1,56 @@
-.mainNav{
-    display:flex;
-    height:70px;
-    background-color: #fff;
+.mainNav {
+  display: flex;
+  height: 70px;
+  background-color: #fff;
 }
-.mainNavLogo{
-    display: flex;
-    padding:20px;
-    margin-left:40px ;
-    flex:0.7
+.mainNavLogo {
+  display: flex;
+  padding: 20px;
+  margin-left: 40px;
+  flex: 0.7;
 }
-.mainNavLogo > img{
-    height:28px;
+.mainNavLogo > img {
+  height: 28px;
 }
-.mainNavLinks{
-    display: flex;
-    flex: 0.3;
+.mainNavLinks {
+  display: flex;
+  flex: 0.3;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 1vh;
 }
-.mainNavLinks >a{
-    text-decoration: none;
-    color:black;
-    font-weight: 500;
-    cursor: pointer;
-    margin:40px;
-    font-size: 16px;
+.mainNavLinks > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
 }
-.navContainer{
-    height:35px;
-    background-color:#D3D5D6;
-    color:black;
-    padding-top: 7px;
-    padding-bottom: 7px;
+.navContainer {
+  height: 35px;
+  background-color: #d3d5d6;
+  color: black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
 }
-.navLinks{
-    margin-left: 50%;
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
 }
-.navLinks > a{
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-    cursor: pointer;
-    margin:40px;
-    font-size: 16px;
-} 
+.navLinks > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  /* margin:40px; */
+  font-size: 16px;
+}
+@media screen and (max-width: 630px) {
+  .navLinks {
+    width: 100vw;
+  }
+}

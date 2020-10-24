@@ -51,6 +51,7 @@ function MainFeatures() {
           description="4 working modes"
         />
       </div>
+      <div style={{marginTop:'5vh', height:'2vh'}}></div>
     </div>
   );
 }

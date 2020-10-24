@@ -8,8 +8,8 @@
   margin-bottom: 0px;
 }
 .carouselContainer{
-  height:430px;
-  width:450px;
+  height:60vh;
+  width:35vw;
   margin-left: 90px;
   margin-top: 18px;
 }
@@ -29,6 +29,7 @@
 }
 .productContainer {
   display: flex;
+  flex-wrap: wrap;
   height: fit-content;
   margin-bottom: 40px;
 }
@@ -37,6 +38,7 @@
   display: flex;
   flex-direction: column;
   flex: 0.5;
+  margin-left: 1vw;
 }
 .uv {
   color: #5b90fb;
@@ -167,4 +169,14 @@
 .broucherContainer > span:nth-child(2){
   margin-left: 5%;
   margin-right: 14%;
+}
+@media screen and (max-width:480px){
+  .carouselContainer{
+    height:55vh;
+    width:65vw;
+    margin-top: 18px;
+  }
+.subProdPara {
+   width:45vw;
+ }
 }
