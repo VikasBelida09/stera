@@ -4,6 +4,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Link } from "react-router-dom";
+import { HashLink as HLink } from 'react-router-hash-link';
 function Footer() {
   return (
     <div className={classes.footerContainer}>
@@ -12,18 +13,53 @@ function Footer() {
       </div>
       <div className={classes.footerMiddle}>
         <div className={classes.footerMiddle1}>
-          <a href="#aboutus">About us</a>
-          <a href="#product">The Product</a>
-          <a href="#features">Features</a>
+          <HLink
+            to={{
+              pathname: "/",
+              hash: "#aboutus",
+            }}
+          >
+            About us
+          </HLink>
+          <HLink
+            to={{
+              pathname: "/",
+              hash: "#product",
+            }}
+          >
+            The Product
+          </HLink>
+          <HLink
+            to={{
+              pathname: "/",
+              hash: "#features",
+            }}
+          >
+            Features
+          </HLink>
         </div>
         <div className={classes.footerMiddle2}>
-          <a href="#specifications">Specifications</a>
-          <a href="#usability">Usability</a>
+          <HLink
+            to={{
+              pathname: "/",
+              hash: "#specifications",
+            }}
+          >
+            Specifications
+          </HLink>
+          <HLink
+            to={{
+              pathname: "/",
+              hash: "#usability",
+            }}
+          >
+            Usability
+          </HLink>
           <Link to="/faq">FAQS</Link>
         </div>
         <div className={classes.footerMiddle3}>
           <Link to="/contact">Contact us</Link>
-          <a href="#query">Query</a>
+          <Link to="/contact">Query</Link>
         </div>
       </div>
       <div className={classes.footerRight}>
