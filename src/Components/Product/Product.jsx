@@ -21,7 +21,6 @@ function Product() {
             <Carousel>
               <Carousel.Item style={{ height: "430px"}}>
                 <img
-                  style={{ height: "430px", width:"450" }}
                   className="d-block w-100"
                   src={product1}
                   alt="prod1"
@@ -29,7 +28,6 @@ function Product() {
               </Carousel.Item>
               <Carousel.Item style={{ height: "430px"}}>
                 <img
-                  style={{ height: "430px", width:"450" }}
                   className="d-block w-100"
                   src={product2}
                   alt="prod2"
@@ -37,7 +35,6 @@ function Product() {
               </Carousel.Item>
               <Carousel.Item style={{ height: "430px"}}>
                 <img
-                  style={{ height: "430px", width:"450" }}
                   className="d-block w-100"
                   src={product3}
                   alt="prod3"
@@ -45,7 +42,6 @@ function Product() {
               </Carousel.Item>
               <Carousel.Item style={{ height: "430px"}}>
                 <img
-                  style={{ height: "430px", width:"450" }}
                   className="d-block w-100"
                   src={product4}
                   alt="prod4"
@@ -85,28 +81,28 @@ function Product() {
               <span title="color" className={classes.subProdSpan}>
                 General
               </span>
-              <pre className={classes.subProdPara}>{`Types: Cleaning Tools 
-Materials: ABS,Stainless Steel`}</pre>
+              <p className={classes.subProdPara}>{`Types: Cleaning Tools 
+Materials: ABS,Stainless Steel`}</p>
             </div>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
                 Dimensions and Weight
               </span>
-              <pre className={classes.subProdPara}>{`Product weight: 5.0000 kg
+              <p className={classes.subProdPara}>{`Product weight: 5.0000 kg
 Package weight: 5.4000 kg
 Product size (L x W x H): 32.50 x 29.00 x 39.50 cm / 
 12.8 x 11.42 x 15.55 inches
 Package size (L x W x H): 35.00 x 30.00 x 40.00 cm /
-13.78 x 11.81 x 15.75 inches`}</pre>
+13.78 x 11.81 x 15.75 inches`}</p>
             </div>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
                 Package Contents
               </span>
-              <pre
+              <p
                 className={classes.subProdPara}
               >{`Package Contents: 1 x Disinfection Cabinet, 2 x 
-Stainless Steel Shelf, 1 x Chinese Manua`}</pre>
+Stainless Steel Shelf, 1 x Chinese Manua`}</p>
             </div>
           </div>
           <span title="price" className={classes.price}>

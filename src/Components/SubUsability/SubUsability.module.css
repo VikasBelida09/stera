@@ -1,10 +1,12 @@
 .subUsability {
   display: flex;
   min-height: 30vh;
+  max-height:250px;
   height: fit-content;
 }
 .image > img {
   height: 25vh;
+  max-height:200px;
   object-fit: contain;
 }
 .image {

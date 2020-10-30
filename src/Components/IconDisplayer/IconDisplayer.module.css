@@ -18,11 +18,13 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    width:120px;
+    /* width:120px; */
 }
 @media screen and (max-width:480px){
 .iconContainer{
    margin-top: 2vh;
    margin-bottom: 1vh;
+ }
+ .iconContainer > span{
  }
 }

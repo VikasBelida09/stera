@@ -13,6 +13,10 @@
   margin-left: 90px;
   margin-top: 18px;
 }
+.carouselContainer img{
+   height: 70vh;
+   width: 45vw ;
+}
 .buyLinks{
     max-width: 100vw;
     margin-top: 40px;
@@ -29,7 +33,6 @@
 }
 .productContainer {
   display: flex;
-  flex-wrap: wrap;
   height: fit-content;
   margin-bottom: 40px;
 }
@@ -82,6 +85,7 @@
 }
 .subProdPara {
   font-size: 18px;
+  width: 30vw;
   font-weight: 500;
   color: #85888d;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -171,12 +175,31 @@
   margin-right: 14%;
 }
 @media screen and (max-width:480px){
-  .carouselContainer{
-    height:55vh;
-    width:65vw;
-    margin-top: 18px;
-  }
+.carouselContainer{
+ width:90vw !important;
+ margin-left: auto;
+ margin-right: auto;
+}
+.carouselContainer >img{
+  width: 100vw !important;
+}
 .subProdPara {
    width:45vw;
+ }
+ .buyBtn{
+   margin-left: 3vw;
+ }
+ .productContainer{
+   display: flex;
+   flex-direction: column;
+ }
+ .productLeftView,
+ .productRightView{
+   flex:1;
+ }
+.broucherContainer{
+   margin-top: 1vh;
+   display: flex;
+   justify-content: center;
  }
 }
