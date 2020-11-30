@@ -28,7 +28,8 @@
   color: white;
   font-size: 32px;
   font-weight: bold;
-  margin-left: 45%;
+  display: flex;
+  justify-content: center;
   margin-top: 0px;
 }
 .productContainer {
@@ -198,8 +199,14 @@
    flex:1;
  }
 .broucherContainer{
-   margin-top: 1vh;
+   margin-top: 4vh;
    display: flex;
    justify-content: center;
+ }
+ .productRightView{
+   margin-left: 5vw;
+ }
+ .uv,.disinfect{
+   font-size: 35px;
  }
 }

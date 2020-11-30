@@ -17,12 +17,13 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <>
-              <Navbar />
-              <div className="product">
-                <Info />
-                <Aboutus />
-                <Product />
-              </div>
+              <Navbar>
+                <div className="product">
+                  <Info />
+                  <Aboutus />
+                  <Product />
+                </div>
+              </Navbar>
               <MainFeatures />
               <div className="usability">
                 <Usability />

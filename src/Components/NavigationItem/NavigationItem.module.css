@@ -1,0 +1,17 @@
+.linkStyle,.linkStyle:hover{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #FCFCFC;
+    text-decoration: none;
+}
+.navItem{
+  height: 10vh;
+  padding-left: 6vw;
+}
+.navItemBorder{
+    margin-top: 2vh;
+    width:158px;
+    height:1.4px;
+    background-color: #158ACA;
+}

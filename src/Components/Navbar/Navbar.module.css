@@ -12,6 +12,10 @@
 .mainNavLogo > img {
   height: 28px;
 }
+.navBarcontainer {
+  max-width: 100%;
+  overflow: hidden;
+}
 .mainNavLinks {
   display: flex;
   flex: 0.3;
@@ -25,6 +29,9 @@
   font-weight: 500;
   cursor: pointer;
   font-size: 16px;
+}
+.hamburger {
+  display: none;
 }
 .navContainer {
   height: 35px;
@@ -48,15 +55,59 @@
   cursor: pointer;
   font-size: 16px;
 }
+.navItemContainer {
+  display: none;
+}
 @media screen and (max-width: 630px) {
   .navLinks {
     width: 100vw;
   }
- .mainNavLogo {
-   flex:0.4;
-   margin-left: 1vw;
- }
- .mainNavLinks {
-  flex: 0.6;
- }
+  .mainNavLogo {
+    flex: 0.4;
+    margin-left: 1vw;
+  }
+  .mainNavLinks {
+    flex: 0.6;
+    display: none;
+  }
+  .navContainer {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex: 0.6;
+    align-items: flex-end;
+    padding-bottom: 1vh;
+    cursor: pointer;
+    margin-right: 10vw;
+    margin-bottom: 3vh;
+    justify-content: flex-end;
+  }
+  .sideDrawer {
+    height: 100vh;
+    width: 55vw;
+    background-color: #5b5a5a;
+    box-sizing: border-box;
+    z-index: 200;
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease-out;
+  }
+  .child {
+    z-index: -1;
+  }
+  .open {
+    transform: translateX(0);
+    border: 1.2px solid #1288c9;
+  }
+  .close {
+    transform: translateX(100%);
+    display: none;
+  }
+  .navItemContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6vh;
+  }
 }

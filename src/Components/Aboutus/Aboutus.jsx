@@ -19,30 +19,30 @@ function Aboutus() {
           </span>
           <h4 className={classes.infoQuestion}>What is UV technology?</h4>
           <div className={classes.answerContainer}>
-            <pre
+            <p
               className={classes.answer}
             >{`UV disinfection technology applies as a multiple barrier 
 approach to reducing the transmission of virus causing 
-COVID-19, SARSCoV-2 and more.`}</pre>
-            <pre
+COVID-19, SARSCoV-2 and more.`}</p>
+            <p
               className={classes.answer}
             >{`UV is a known disinfectant for water, air and surfaces that can help 
 to mitigate the risk of acquiring an infection with the 
-COVID-19 virus when applied correctly.`}</pre>
-            <pre
+COVID-19 virus when applied correctly.`}</p>
+            <p
               className={classes.answer}
             >{`UV disinfection technologies are being widely used to sanitise against 
-viruses & bacteria.`}</pre>
+viruses & bacteria.`}</p>
           </div>
           <div className={classes.aboutUVContainer}>
             <span title="aboutuv" className={classes.aboutUV}>
               About <strong className={classes.uv}>UV</strong> Disinfection
               Shield
             </span>
-            <pre
+            <p
               className={classes.aboutUVInfo}
             >{`The brand new UV Disinfection shield is here! It’s a portable
-disinfection cabinet That uses the UV disinfection and sterilization`}</pre>
+disinfection cabinet That uses the UV disinfection and sterilization`}</p>
           </div>
         </div>
         <Link to="/knowMore">
