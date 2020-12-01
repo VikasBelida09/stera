@@ -5,6 +5,9 @@ import hamburger from "../../Assets/hamburger.svg";
 import { Link } from "react-router-dom";
 import cx from "classnames";
 import NavigationItem from "../NavigationItem/NavigationItem";
+import FacebookIcon from "../../Assets/facebook.svg";
+import InstagramIcon from "../../Assets/instagram.svg";
+import LinkedInIcon from "../../Assets/linkedin.svg";
 function Navbar({ children }) {
   const [hamBurgerIconPressed, setHamBurgerIconPressed] = useState(false);
   const setHamIconPressedValue = () => {
@@ -42,6 +45,11 @@ function Navbar({ children }) {
           <NavigationItem name="Features" url="#features" />
           <NavigationItem name="Specifications" url="#specifications" />
           <NavigationItem name="Usability" url="#usability" />
+          <div className={classes.Icons}>
+             <img src={FacebookIcon} alt="facebook"/>
+             <img src={InstagramIcon} alt="facebook"/>
+             <img src={LinkedInIcon} alt="facebook"/>
+          </div>
         </div>
       </div>
       <div className={classes.navContainer}>

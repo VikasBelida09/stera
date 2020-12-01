@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import Info from "./Components/Info/Info";
 import Knowmore from "./Components/knowmore/knowmore";
 import MainFeatures from "./Components/MainFeatures/MainFeatures";
+import MainFeaturesContainer from "./Components/MainFeaturesContainer/MainFeaturesContainer";
 import Navbar from "./Components/Navbar/Navbar";
 import Product from "./Components/Product/Product";
 import Usability from "./Components/Usability/Usability";
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route path="/faq" exact>
             <Contact />
+          </Route>
+          <Route path="/maincontainer" exact>
+            <MainFeaturesContainer />
           </Route>
         </Switch>
       </Router>

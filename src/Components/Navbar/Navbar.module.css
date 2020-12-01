@@ -110,4 +110,15 @@
     flex-direction: column;
     padding-top: 6vh;
   }
+  .Icons{
+    display: flex;
+  }
+  .Icons > img{
+    height:20px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .Icons > img:nth-child(1){
+    margin-left: 30px; 
+  }
 }

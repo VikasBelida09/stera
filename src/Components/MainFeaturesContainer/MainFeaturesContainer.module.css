@@ -1,0 +1,67 @@
+.poster {
+  background-image: url("../../Assets/uvstera.png");
+  height: 45vh;
+  padding-top: 18vh;
+}
+.posterTitle {
+  color: #bfffff;
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 1vw;
+}
+.poster > p {
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 2vh;
+  padding-left: 1vw;
+}
+.mainFeaturesContainerHeader {
+  margin-top: 4vh;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.mainFeaturesContainerHeader > img {
+  margin-left: 5vw;
+  height: 28px;
+  object-fit: contain;
+}
+.link,
+.link:hover {
+  margin-top: 1.2vh;
+  margin-right: 5vw;  
+  text-decoration: none;
+  color: black;
+  font-weight: 650;
+  font-size: 18px;
+}
+.mainFeaturesContainerBanner{
+    background-image: url('../../Assets/steracc.png');
+    background-size: 100% 100%;
+    height:45vh;
+}
+.bannerLogo{
+    height:4vh;
+    object-fit: contain;
+    margin-top: 14vh;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40vw;
+}
+.spanTitle{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    color: #707277;
+    margin-left: 7vw;
+    margin-top: 2vh;
+}
+.blue{
+    color: #5B90FB;
+}
+.top{
+  display: flex;
+  justify-content: flex-end;
+}

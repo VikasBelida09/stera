@@ -1,0 +1,23 @@
+.ImageTextContainer{
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 2vw;
+}
+.ImageTextContainer > img{
+    height:252px;
+    object-fit: contain;
+    margin-bottom: 2vh;
+}
+.ImageTexttitle{
+    font-size: 26px;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.ImageTextDescription{
+    font-size:18px;
+    color: #79797A;
+    font-family: 'Segoe UI'
+}
