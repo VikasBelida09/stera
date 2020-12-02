@@ -57,10 +57,16 @@
 }
 @media screen and (max-width: 480px) {
     .mainFeatures{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         margin-top: 3vh;
+        background-color: rgba(100, 98, 98, 0.06);
+        border: 1px solid rgba(100, 98, 98, 0.06);
     }
     .mainFeaturesContainer{
         height: fit-content;
+        background-color: #fff;
     }     
+    .mainFeaturesTop > img{
+        display: none;
+    }
 }

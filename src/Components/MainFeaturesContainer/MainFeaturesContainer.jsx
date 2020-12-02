@@ -3,6 +3,9 @@ import stera from "../../Assets/steramain.png";
 import ImageTextContainer from "../ImageTextContainer/ImageTextContainer";
 import classes from "./MainFeaturesContainer.module.css";
 import logo from "../../Assets/steralogo.png";
+import svg1 from "../../Assets/makeup.svg";
+import svg2 from "../../Assets/baby-cutlery.svg";
+import svg3 from "../../Assets/feeding-bottle.svg";
 import { Link } from "react-router-dom";
 import IconDisplayer from "../IconDisplayer/IconDisplayer";
 import top from "../../Assets/Group21.svg";
@@ -37,6 +40,28 @@ function MainFeaturesContainer() {
             softer,smoother and lighter, easy to move, 
             allowing you to get aseptic day freely.`}
       />
+      <div className={classes.svgContainer}>
+        <div>
+          <div className={classes.ellipseBorder}>
+            <img src={svg1} alt="svg1" />
+          </div>
+          <p className={classes.pDescription}>Beauty Care</p>
+        </div>
+        <div>
+          <div className={classes.ellipseBorder1}>
+            <img src={svg2} alt="svg2" />
+          </div>
+          <p className={classes.pDescription}>{`Daily
+tableware`}</p>
+        </div>
+        <div>
+          <div className={classes.ellipseBorder}>
+            <img src={svg3} alt="svg3" />
+          </div>
+          <p className={classes.pDescription}>{`Children's 
+Product`}</p>
+        </div>
+      </div>
       <div className={classes.poster}>
         <span className={classes.posterTitle}>{`UV Sterilization Technology,
 Safer Scientific Disinfection`}</span>
@@ -52,6 +77,7 @@ the family members.`}</p>
             key={imageText.id}
             title={imageText.title}
             description={imageText.description}
+            paddingLeft={true}
           />
         );
       })}

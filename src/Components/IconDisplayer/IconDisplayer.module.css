@@ -24,4 +24,7 @@
    margin-top: 2vh;
    margin-bottom: 1vh;
  }
+ .iconContainer > span{
+     margin-left: 3.5vw;
+ };
 }

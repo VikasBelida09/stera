@@ -65,3 +65,24 @@
   display: flex;
   justify-content: flex-end;
 }
+.ellipseBorder, .ellipseBorder1{
+  border: 3px solid #707070;
+  border-radius: 50%;
+  padding:30px;
+  margin-top: 3vh;
+}
+.ellipseBorder >img,.ellipseBorder1 > img{
+  height:30px;
+  width:30px;
+}
+.svgContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.pDescription{
+  margin-left: 4vw;
+  width:5vw;
+}

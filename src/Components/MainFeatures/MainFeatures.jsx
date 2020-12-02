@@ -15,8 +15,7 @@ import logo10 from "../../Assets/logo10.png";
 function MainFeatures() {
   return (
     <div className={classes.mainFeaturesContainer} id="features">
-        <div className={classes.border}>
-        </div>
+      <div className={classes.border}></div>
       <div className={classes.mainFeaturesTop}>
         <h5>Main Features</h5>
         <img src={surface} alt="surface" />
@@ -34,24 +33,12 @@ function MainFeatures() {
           description="Built-in induction Night Light"
         />
         <IconDisplayer img={logo6} description="18l UV Sterilizer" />
-        <IconDisplayer
-          img={logo7}
-          description="UV Light + Ozone Layer"
-        />
-        <IconDisplayer
-          img={logo8}
-          description="Air inflow Filtaration"
-        />
-        <IconDisplayer
-          img={logo9}
-          description="ABS + Stainless Steel"
-        />
-        <IconDisplayer
-          img={logo10}
-          description="4 working modes"
-        />
+        <IconDisplayer img={logo7} description="UV Light + Ozone Layer" />
+        <IconDisplayer img={logo8} description="Air inflow Filtaration" />
+        <IconDisplayer img={logo9} description="ABS + Stainless Steel" />
+        <IconDisplayer img={logo10} description="4 working modes" />
       </div>
-      <div style={{marginTop:'5vh', height:'2vh'}}></div>
+      <div style={{ marginTop: "5vh", height: "2vh" }}></div>
     </div>
   );
 }

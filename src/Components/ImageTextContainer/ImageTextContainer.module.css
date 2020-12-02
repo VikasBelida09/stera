@@ -15,9 +15,11 @@
     font-size: 26px;
     font-weight: bold;
     color: #3D3D3D;
+    margin-left: 2vw;
 }
 .ImageTextDescription{
     font-size:18px;
     color: #79797A;
-    font-family: 'Segoe UI'
+    font-family: 'Segoe UI';
+    margin-left: 2vw;
 }
