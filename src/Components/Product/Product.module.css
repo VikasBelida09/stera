@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 100vw;
 }
 .divider {
@@ -7,22 +7,22 @@
   background-color: #262626;
   margin-bottom: 0px;
 }
-.carouselContainer{
-  height:60vh;
-  width:35vw;
+.carouselContainer {
+  height: 60vh;
+  width: 35vw;
   margin-left: 90px;
   margin-top: 18px;
 }
-.carouselContainer img{
-   height: 70vh;
-   width: 45vw ;
+.carouselContainer img {
+  height: 65vh;
+  width: 45vw;
 }
-.buyLinks{
-    max-width: 100vw;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI';
+.buyLinks {
+  max-width: 100vw;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI";
 }
 .divider > h5 {
   color: white;
@@ -58,6 +58,7 @@
 .kills {
   color: #85888d;
   font-size: 18px;
+  margin-right: 5px;
 }
 .cv {
   color: #5b90fb;
@@ -122,91 +123,147 @@
   margin-bottom: 35px;
 }
 .amazon,
-.flipkart{
-    height:120px;
-    margin-right: 3%;
-    margin-bottom: 5%;
+.flipkart {
+  height: 120px;
+  margin-right: 3%;
+  margin-bottom: 5%;
 }
-.amazon >img ,
-.flipkart >img {
-    height: 100px;
-    width:230px;
-    cursor: pointer;
+.amazon > img,
+.flipkart > img {
+  height: 100px;
+  width: 230px;
+  cursor: pointer;
 }
-.shoppingLinks{
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    width:100%;
+.shoppingLinks {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  width: 100%;
 }
 
-.bulkorders > span{
-   font-size: 27px;
-   font-weight: bold;
-   padding-left: 5px;
+.bulkorders > span {
+  font-size: 27px;
+  font-weight: bold;
+  padding-left: 5px;
 }
-.bulkorders{
-   display: flex;
-   justify-content: center;
-   margin-top: -5%;
-   margin-bottom: 0px;
+.bulkorders {
+  display: flex;
+  justify-content: center;
+  margin-top: -5%;
+  margin-bottom: 0px;
 }
-.bulk{
-    color:#5b90fb;
+.bulk {
+  color: #5b90fb;
 }
-.phone,.email{
-    font-size: 27px;
-    color:#85888D;
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
+.phone,
+.email {
+  font-size: 27px;
+  color: #85888d;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
-.email{
-    display: flex;
-    justify-content: center;
+.email {
+  display: flex;
+  justify-content: center;
 }
-.broucherContainer{
+.broucherContainer {
   margin-top: 17%;
   display: flex;
   justify-content: flex-end;
-  color:#5b90fb;
+  color: #5b90fb;
 }
-.broucherContainer > span:nth-child(2){
+.broucherContainer > span:nth-child(2) {
   margin-left: 5%;
   margin-right: 14%;
 }
-@media screen and (max-width:480px){
-.carouselContainer{
- width:90vw !important;
- margin-left: auto;
- margin-right: auto;
+.mobileViewBuy {
+  display: none;
 }
-.carouselContainer >img{
-  width: 100vw !important;
-}
-.subProdPara {
-   width:45vw;
- }
- .buyBtn{
-   margin-left: 3vw;
- }
- .productContainer{
-   display: flex;
-   flex-direction: column;
- }
- .productLeftView,
- .productRightView{
-   flex:1;
- }
-.broucherContainer{
-   margin-top: 4vh;
-   display: flex;
-   justify-content: center;
- }
- .productRightView{
-   margin-left: 5vw;
- }
- .uv,.disinfect{
-   font-size: 35px;
- }
+@media screen and (max-width: 480px) {
+  .carouselContainer {
+    width: 70vw !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price {
+    font-size: 12px;
+  }
+  .amount {
+    font-size: 18px;
+  }
+  .carouselContainer > img {
+    width: 100vw !important;
+  }
+  .carouselContainer img {
+    height: 50vh;
+  }
+  .subProdPara {
+    width: 45vw;
+  }
+  .buyBtn {
+    margin-left: 80px;
+    width: 100px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .productLeftView,
+  .productRightView {
+    flex: 1;
+  }
+  .broucherContainer {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 9.5px;
+    font-weight: bold;
+  }
+  .productRightView {
+    margin-left: 5vw;
+  }
+  .uv,
+  .disinfect {
+    font-size: 22px;
+  }
+  .mobileViewBuy {
+    display: block;
+    margin-top: 1vh;
+  }
+  .deskViewBuy {
+    display: none;
+  }
+  .kills,
+  .cv {
+    font-size: 14px;
+  }
+  .specifications {
+    font-style: 14px;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+    margin-top: 4vh;
+  }
+  .subProdSpan,
+  .subProdPara {
+    font-size: 12px;
+  }
+  .bulkorders > span {
+    font-size: 14px;
+  }
+  .phone,
+  .email {
+    font-size: 14px;
+  }
+  .amazon > img,
+  .flipkart > img {
+    height: 70px;
+    width: 140px; 
+  }
+  .amazon,.flipkart{
+    margin-bottom: 0vh;
+  }
 }

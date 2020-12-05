@@ -57,8 +57,12 @@
 }
 .footerRightIcons {
   margin-top: -5px;
-  display: flex;
-  align-content: space-between;
+}
+.footerRightIcons > a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 1vw;
 }
 @media screen and (max-width: 630px) {
   .footerContainer {

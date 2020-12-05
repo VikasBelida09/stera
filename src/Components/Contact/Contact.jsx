@@ -60,6 +60,7 @@ function Contact() {
       </div>
       {path === "contact" ? (
         <Form />
+        // <iframe title="google form" src={`https://docs.google.com/forms/d/e/1FAIpQLSfXj2csDUO6DjXGeOAz0taL_iTUR85UuhmdkJvdFIjwMUsQCQ/viewform?usp=sf_link`} frameborder="0"  width="650px"></iframe>
       ) : (
         <>
           {Qa}

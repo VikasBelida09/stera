@@ -46,9 +46,24 @@ function Navbar({ children }) {
           <NavigationItem name="Specifications" url="#specifications" />
           <NavigationItem name="Usability" url="#usability" />
           <div className={classes.Icons}>
-             <img src={FacebookIcon} alt="facebook"/>
-             <img src={InstagramIcon} alt="facebook"/>
-             <img src={LinkedInIcon} alt="facebook"/>
+            <a
+              href="https://www.facebook.com/Stera-104627901503865"
+              className={classes.iconLinks}
+            >
+              <img src={FacebookIcon} alt="facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/steracare/"
+              className={classes.iconLinks}
+            >
+              <img src={InstagramIcon} alt="instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/steracare/"
+              className={classes.iconLinks}
+            >
+              <img src={LinkedInIcon} alt="linkedin" />
+            </a>
           </div>
         </div>
       </div>

@@ -65,9 +65,15 @@ function Footer() {
       <div className={classes.footerRight}>
         <h4>Social Media :</h4>
         <div className={classes.footerRightIcons}>
-          <FacebookIcon />
-          <InstagramIcon />
-          <LinkedInIcon />
+          <a href="https://www.facebook.com/Stera-104627901503865">
+            <FacebookIcon />
+          </a>
+          <a href="https://www.instagram.com/steracare/">
+            <InstagramIcon />
+          </a>
+          <a href="https://www.linkedin.com/company/steracare/">
+            <LinkedInIcon />
+          </a>
         </div>
       </div>
     </div>

@@ -2,6 +2,12 @@
   background-image: url("../../Assets/uvstera.png");
   height: 45vh;
   padding-top: 18vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  mask-image: url('../../Assets/Rectangle.png');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 .posterTitle {
   color: #bfffff;

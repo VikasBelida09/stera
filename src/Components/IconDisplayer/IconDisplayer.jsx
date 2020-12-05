@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./IconDisplayer.module.css";
-function IconDisplayer({ img, description, height, width, ml, color }) {
+function IconDisplayer({ img, description, height, width, ml, color,textWidth,textMt }) {
   return (
     <div className={classes.iconContainer}>
       <img
@@ -11,7 +11,7 @@ function IconDisplayer({ img, description, height, width, ml, color }) {
       <span
         title={description}
         style={
-          color ? { color: color, fontSize: 23, fontFamily: "Segoe UI"} : {}
+          color ? { color: color, fontSize: 23, fontFamily: "Segoe UI"} : width?{width:textWidth,marginTop:textMt}:{}
         }
       >
         {description}

@@ -113,12 +113,15 @@
   .Icons{
     display: flex;
   }
-  .Icons > img{
+  .iconLinks > img{
     height:20px;
     margin-left: 10px;
     margin-right: 20px;
   }
-  .Icons > img:nth-child(1){
+  .iconLinks > img:nth-child(1){
     margin-left: 30px; 
+  }
+  .iconLinks,.iconLinks:hover{
+    text-decoration: none;
   }
 }

@@ -7,6 +7,7 @@ import product3 from "../../Assets/product3.png";
 import product4 from "../../Assets/product4.png";
 import flipkart from "../../Assets/flipkart.png";
 import amazon from "../../Assets/amazon.png";
+import cx from "classnames";
 function Product() {
   const [isHidden, setIsHidden] = useState(false);
   return (
@@ -19,40 +20,24 @@ function Product() {
         <div className={classes.productLeftView}>
           <div className={classes.carouselContainer}>
             <Carousel>
-              <Carousel.Item style={{ height: "430px"}}>
-                <img
-                  className="d-block w-100"
-                  src={product1}
-                  alt="prod1"
-                />
+              <Carousel.Item  className={classes.carouselItemHeight}>
+                <img className="d-block w-100" src={product1} alt="prod1" />
               </Carousel.Item>
-              <Carousel.Item style={{ height: "430px"}}>
-                <img
-                  className="d-block w-100"
-                  src={product2}
-                  alt="prod2"
-                />
+              <Carousel.Item >
+                <img className="d-block w-100" src={product2} alt="prod2" />
               </Carousel.Item>
-              <Carousel.Item style={{ height: "430px"}}>
-                <img
-                  className="d-block w-100"
-                  src={product3}
-                  alt="prod3"
-                />
+              <Carousel.Item >
+                <img className="d-block w-100" src={product3} alt="prod3" />
               </Carousel.Item>
-              <Carousel.Item style={{ height: "430px"}}>
-                <img
-                  className="d-block w-100"
-                  src={product4}
-                  alt="prod4"
-                />
+              <Carousel.Item >
+                <img className="d-block w-100" src={product4} alt="prod4" />
               </Carousel.Item>
             </Carousel>
           </div>
-           <div className={classes.broucherContainer}>
-             <span title="broucher">broucher</span>
-             <span title="certifications">certifications</span>
-           </div> 
+          <div className={cx(classes.broucherContainer, classes.deskViewBuy)}>
+            <span title="broucher">broucher</span>
+            <span title="certifications">certifications</span>
+          </div>
         </div>
         <div className={classes.productRightView}>
           <div>
@@ -63,11 +48,67 @@ function Product() {
               Disinfection Sheild
             </span>
           </div>
-          <h2 className={classes.kills}>Kills 99.9% of viruses including</h2>
-          <span title="cv" className={classes.cv}>
-            corona virus
-          </span>
-          <span className={classes.specifications} title="specifications" id="specifications">
+          <div>
+            <span className={classes.kills}>
+              Kills 99.9% of viruses including
+            </span>
+            <span title="cv" className={classes.cv}>
+              corona virus
+            </span>
+          </div>
+
+          <div className={classes.mobileViewBuy}>
+            <span title="price" className={classes.price}>
+              Price
+            </span>
+            <div className={classes.buy}>
+              <span title="amount" className={classes.amount}>
+                Rs 9,999
+              </span>
+              <button
+                className={classes.buyBtn}
+                onClick={() => setIsHidden(true)}
+                style={isHidden ? { display: "none" } : {}}
+              >
+                BUY NOW
+              </button>
+            </div>
+            <div className={classes.broucherContainer}>
+              <span title="broucher">broucher</span>
+              <span title="certifications">certifications</span>
+            </div>
+            {isHidden && (
+              <div className={classes.buyLinks}>
+                <div className={classes.shoppingLinks}>
+                  <div className={classes.amazon}>
+                    <img src={amazon} alt="amazon" />
+                  </div>
+                  <div className={classes.flipkart}>
+                    <img src={flipkart} alt="flipkart" />
+                  </div>
+                </div>
+                <div className={classes.bulkorders}>
+                  <span title="For">For</span>
+                  <span title="Bulk" className={classes.bulk}>
+                    Bulk
+                  </span>
+                  <span title="Orders">Orders:</span>
+                </div>
+                <span className={classes.phone}>
+                  <strong>Call us:</strong> 8088954323
+                </span>
+                <span className={classes.email}>
+                  <strong>Email us:</strong> sales@steracare.com
+                </span>
+              </div>
+            )}
+          </div>
+
+          <span
+            className={classes.specifications}
+            title="specifications"
+            id="specifications"
+          >
             Specifications
           </span>
           <div className={classes.productInfo}>
@@ -105,10 +146,13 @@ Package size (L x W x H): 35.00 x 30.00 x 40.00 cm /
 Stainless Steel Shelf, 1 x Chinese Manua`}</p>
             </div>
           </div>
-          <span title="price" className={classes.price}>
+          <span
+            title="price"
+            className={cx(classes.price, classes.deskViewBuy)}
+          >
             Price
           </span>
-          <div className={classes.buy}>
+          <div className={cx(classes.buy, classes.deskViewBuy)}>
             <span title="amount" className={classes.amount}>
               Rs 9,999
             </span>
@@ -123,28 +167,30 @@ Stainless Steel Shelf, 1 x Chinese Manua`}</p>
         </div>
       </div>
       {isHidden && (
-        <div className={classes.buyLinks}>
-          <div className={classes.shoppingLinks}>
-            <div className={classes.amazon}>
-              <img src={amazon} alt="amazon" />
+        <div className={classes.deskViewBuy}>
+          <div className={classes.buyLinks}>
+            <div className={classes.shoppingLinks}>
+              <div className={classes.amazon}>
+                <img src={amazon} alt="amazon" />
+              </div>
+              <div className={classes.flipkart}>
+                <img src={flipkart} alt="flipkart" />
+              </div>
             </div>
-            <div className={classes.flipkart}>
-              <img src={flipkart} alt="flipkart" />
+            <div className={classes.bulkorders}>
+              <span title="For">For</span>
+              <span title="Bulk" className={classes.bulk}>
+                Bulk
+              </span>
+              <span title="Orders">Orders:</span>
             </div>
-          </div>
-          <div className={classes.bulkorders}>
-            <span title="For">For</span>
-            <span title="Bulk" className={classes.bulk}>
-              Bulk
+            <span className={classes.phone}>
+              <strong>Call us:</strong> 8088954323
             </span>
-            <span title="Orders">Orders:</span>
+            <span className={classes.email}>
+              <strong>Email us:</strong> sales@steracare.com
+            </span>
           </div>
-          <span className={classes.phone}>
-            <strong>Call us:</strong> 8088954323
-          </span>
-          <span className={classes.email}>
-            <strong>Email us:</strong> sales@steracare.com
-          </span>
         </div>
       )}
     </div>

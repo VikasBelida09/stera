@@ -100,38 +100,70 @@
   display: flex;
   margin-left: 15px;
 }
-.linksToSocial > img {
+.linksToSocial > a > img,
+.linksToSocial > a > img:hover {
   margin-left: 25px;
   height: 22px;
+  text-decoration: none;
+}
+.mobileView {
+  visibility: hidden;
 }
 @media screen and (max-width: 480px) {
   .surface1 {
-    height: 40vh;
-  }
-  .infoFrontContainer {
-    margin-top: -100vh;
+    height: 30vh;
+    object-position: 20% 10%;
   }
   .miniBoldTitle {
-    margin-left: -5vw;
-    margin-top: 3vh;
+    display: flex;
+    margin-top: 2vh;
     font-size: 14px;
+    justify-content: center;
+    margin-left: -5vw;
+  }
+  .buyBtn {
+    width: 110px;
+    font-size: 18px;
+    height: 36px;
+    margin-top: 5vh;
   }
   .title {
-    font-size: 21px;
+    font-size: 19px;
   }
   .miniTitle {
-    font-size: 15px;
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
-  }
-  .features {
-    grid-template-columns: auto auto;
+    margin-left: 1.5vw;
   }
   .bottomTitle {
     margin-left: -44vw;
     width: 100vw;
     margin-top: 0vh;
   }
-  .linksToSocial {
-    margin-top: -4.5vh;
+  .infoContainer {
+    background-image: url("../../Assets/steracs.png");
+    background-size: 100% 55%;
+  }
+  .infoBackContainer {
+    background-size: 100% 55%;
+  }
+  .linksToSocial,
+  .infoFrontContainer,
+  .infoInner {
+    display: none;
+  }
+  .mobileView {
+    /* display: flex; */
+    visibility: visible;
+    margin-top: -60vh;
+  }
+  .textBtnContainer {
+    display: flex;
+    padding-left: 3vw;
+  }
+  .features {
+    grid-template-columns: auto auto;
+    margin-left: 12vw;
   }
 }
