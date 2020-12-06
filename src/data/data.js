@@ -16,6 +16,10 @@ import logo77 from "../Assets/logo7.png";
 import logo88 from "../Assets/logo8.png";
 import logo99 from "../Assets/logo9.png";
 import logo101 from "../Assets/logo10.png";
+import image1 from "../Assets/image1.png";
+import image2 from "../Assets/image2.png";
+import image3 from "../Assets/image3.png";
+import image4 from "../Assets/image4.png";
 export const qa = [
   {
     question:
@@ -256,5 +260,35 @@ export const mainFeaturesIcons = [
     id: 20,
     img: logo101,
     description: "4 working modes",
+  },
+];
+export const subUsabilityImages = [
+  {
+    id: 1,
+    title: "Household",
+    img: image1,
+    description: `Clothes, Slippers, School Bags, Tv Remote, Toys, Keys, Bottles, Masks, 
+    Mobile phones, Laptop and ipads etc`,
+  },
+  {
+    id: 2,
+    title: "Commercial",
+    img: image2,
+    description: `Loose currency & Coins, Pen, Notebooks, Product before selling them, 
+    Tools before starting work in factory.`,
+  },
+  {
+    id: 3,
+    title: "Medical",
+    img: image3,
+    description: `PPE such as, N95 Mask, Eye Goggles, Face shield, Sanitized PPE can be refused,
+    Medical Equipment like Intubation tubes`,
+  },
+  {
+    id: 4,
+    title: "Salon & Spa",
+    img: image4,
+    description: `Nail tools and other equipment, products before selling, sanitize and clean 
+    objects like towels, scissors`,
   },
 ];
