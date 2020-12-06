@@ -39,6 +39,12 @@
     width:100%;
     background-color:#5B90FB;
 }
+.knowMoreBtn{
+    visibility: hidden;
+}
+.hide{
+    visibility: hidden;
+}
 @media screen and (max-width: 730px) {
     .mainFeatures{
         grid-template-columns: auto auto auto auto;
@@ -61,6 +67,8 @@
         margin-top: 3vh;
         background-color: rgba(100, 98, 98, 0.06);
         border: 1px solid rgba(100, 98, 98, 0.06);
+        width: fit-content;
+        padding-right: 10px;
     }
     .mainFeaturesContainer{
         height: fit-content;
@@ -69,4 +77,25 @@
     .mainFeaturesTop > img{
         display: none;
     }
+    .mainFeaturesTop > h5{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .hide{
+        visibility: visible;
+    }
+    .knowMoreBtn {
+        visibility: visible;
+        width: 140px;
+        border: 1px solid #444242;
+        border-radius: 40px;
+        color: white;
+        background-color: #444242;
+        font-size: 19px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 1vh;
+        outline-width: 0;
+        margin-top: 100px;
+      }
 }

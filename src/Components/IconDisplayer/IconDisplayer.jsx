@@ -11,7 +11,7 @@ function IconDisplayer({ img, description, height, width, ml, color,textWidth,te
       <span
         title={description}
         style={
-          color ? { color: color, fontSize: 23, fontFamily: "Segoe UI"} : width?{width:textWidth,marginTop:textMt}:{}
+          color ? { color: color, fontSize: 23, fontFamily: "Segoe UI", marginRight:'auto',marginLeft:'auto'} : width?{width:textWidth,marginTop:textMt}:{}
         }
       >
         {description}

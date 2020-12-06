@@ -39,6 +39,14 @@ function MainFeaturesContainer() {
             with arc lines, makes the whole design 
             softer,smoother and lighter, easy to move, 
             allowing you to get aseptic day freely.`}
+        imgStyles={{
+          objectFit: "unset",
+          height: "260px",
+        }}
+        imgTextContainerStyles={{
+          paddingRight:'0vw',
+          paddingLeft:'0vw'
+        }}
       />
       <div className={classes.svgContainer}>
         <div>

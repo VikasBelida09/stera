@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import classes from "./Contact.module.css";
 import logo from "../../Assets/steralogo.png";
 import { Link, useLocation } from "react-router-dom";
-import Form from "../Form/Form";
 import Footer from "../Footer/Footer";
 import QuestionAnswer from "../QuestionAnswer/QuestionAnswer";
 import { qa } from "../../data/data";
@@ -38,7 +37,7 @@ function Contact() {
     );
   });
   return (
-    <div>
+    <div className={classes.contact}>
       <div className={classes.contactHeader}>
         <img src={logo} alt="stera logo" />
         <Link to="/" className={classes.link}>{`< Back Home`}</Link>
@@ -59,8 +58,18 @@ function Contact() {
         </Link>
       </div>
       {path === "contact" ? (
-        <Form />
-        // <iframe title="google form" src={`https://docs.google.com/forms/d/e/1FAIpQLSfXj2csDUO6DjXGeOAz0taL_iTUR85UuhmdkJvdFIjwMUsQCQ/viewform?usp=sf_link`} frameborder="0"  width="650px"></iframe>
+          <iframe
+            title="google form"
+            src={`https://docs.google.com/forms/d/e/1FAIpQLSfXj2csDUO6DjXGeOAz0taL_iTUR85UuhmdkJvdFIjwMUsQCQ/viewform?embedded=true`}
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            className={classes.googleForm}
+            border="0"
+            style={{overflowX:"hidden"}}
+          >
+            Loading...
+          </iframe>
       ) : (
         <>
           {Qa}

@@ -77,9 +77,25 @@
   .usabilityTitle {
     margin-top: 3vh;
     margin-left: -6vw;
-    font-size: 28px;
+    font-size: 16px;
   }
   .usabilityMiddle {
     margin-top: -18vh;
+  }
+  .usabilityBottom{
+    font-size: 18px;
+  }
+  .lastRow >  h4{
+    font-size: 18px;
+  }
+  .lastRow{
+    margin-bottom: 2vh;
+  }
+  .lastRow > a{
+   right:8vw
+  }
+  .lastRow > a > img{
+      height: 35px;
+      width: 35px;
   }
 }

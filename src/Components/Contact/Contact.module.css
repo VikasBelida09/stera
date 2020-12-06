@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
 }
+.contact::-webkit-scrollbar{
+  display: none;
+}
 .contactHeader > img {
   margin-left: 5vw;
   height: 28px;
@@ -19,8 +22,8 @@
   font-size: 18px;
 }
 .breadCrumb {
-  margin-left:4.2vw;
-  margin-top: 6vh;  
+  margin-left: 4.2vw;
+  margin-top: 6vh;
   width: 25vw;
   display: flex;
   justify-content: space-around;
@@ -38,28 +41,35 @@
   color: #d2d1d1;
   font-weight: bold;
 }
-.active, .active:hover{
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: bold;
-    color:#5B90FB;
+.active,
+.active:hover {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  color: #5b90fb;
 }
-.seeMore{
+.seeMore {
   display: block;
   font-weight: 800;
   font-size: 24px;
   margin-left: 6vw;
   cursor: pointer;
 }
-.email{
+.email {
   margin-top: 25vh;
   margin-bottom: 2vh;
-  color: #85888D;
+  color: #85888d;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
 }
-@media screen and (max-width: 780px){
+.googleForm {
+  height: 180vh;
+  width: 800px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 780px) {
   .breadCrumb {
     width: 35vw;
   }
@@ -67,13 +77,25 @@
   .link:hover {
     margin-top: 5vh;
   }
+  .googleForm {
+    height: 80vh;
+    width: 80vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .breadCrumb {
     width: 55vw;
   }
   .link,
   .link:hover {
     margin-top: 5vh;
+  }
+  .googleForm {
+    height: 450px;
+    width: 95vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }

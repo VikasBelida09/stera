@@ -12,6 +12,7 @@ import logo7 from "../../Assets/logo7.png";
 import logo8 from "../../Assets/logo8.png";
 import logo9 from "../../Assets/logo9.png";
 import logo10 from "../../Assets/logo10.png";
+import { Link } from "react-router-dom";
 function MainFeatures() {
   return (
     <div className={classes.mainFeaturesContainer} id="features">
@@ -37,6 +38,11 @@ function MainFeatures() {
         <IconDisplayer img={logo8} description="Air inflow Filtaration" />
         <IconDisplayer img={logo9} description="ABS + Stainless Steel" />
         <IconDisplayer img={logo10} description="4 working modes" />
+        <Link to="/aboutFeatures" className={classes.hide}>
+          <button type="button" className={classes.knowMoreBtn}>
+            Know more
+          </button>
+        </Link>
       </div>
       <div style={{ marginTop: "5vh", height: "2vh" }}></div>
     </div>

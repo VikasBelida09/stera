@@ -1,12 +1,12 @@
 .subUsability {
   display: flex;
   min-height: 30vh;
-  max-height:250px;
+  max-height: 250px;
   height: fit-content;
 }
 .image > img {
   height: 25vh;
-  max-height:200px;
+  max-height: 200px;
   object-fit: contain;
 }
 .image {
@@ -43,6 +43,16 @@
     padding-bottom: auto;
   }
   .descriptionContainer > h5 {
-    font-size: 24px;
+    font-size: 14px;
+  }
+  .descriptionContainer > p {
+    font-size: 12px;
+    width: 45vw;
+  }
+  .descriptionContainer {
+    margin-top: 3vh;
+  }
+  .subUsability {
+    margin-bottom: -6vh;
   }
 }

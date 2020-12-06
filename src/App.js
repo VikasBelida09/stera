@@ -43,7 +43,7 @@ function App() {
           <Route path="/faq" exact>
             <Contact />
           </Route>
-          <Route path="/maincontainer" exact>
+          <Route path="/aboutFeatures" exact>
             <MainFeaturesContainer />
           </Route>
         </Switch>

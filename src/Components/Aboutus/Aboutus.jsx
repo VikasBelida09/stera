@@ -29,10 +29,6 @@ COVID-19, SARSCoV-2 and more.`}</p>
             >{`UV is a known disinfectant for water, air and surfaces that can help 
 to mitigate the risk of acquiring an infection with the 
 COVID-19 virus when applied correctly.`}</p>
-            <p
-              className={classes.answer}
-            >{`UV disinfection technologies are being widely used to sanitise against 
-viruses & bacteria.`}</p>
           </div>
           <div className={classes.aboutUVContainer}>
             <span title="aboutuv" className={classes.aboutUV}>
