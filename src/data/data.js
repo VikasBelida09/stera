@@ -6,6 +6,16 @@ import logo1 from "../Assets/logo11.svg";
 import logo2 from "../Assets/svg2.svg";
 import logo3 from "../Assets/svguv.svg";
 import logo4 from "../Assets/svg3.svg";
+import logo11 from "../Assets/logo1.png";
+import logo22 from "../Assets/logo2.png";
+import logo33 from "../Assets/logo3.png";
+import logo44 from "../Assets/logo4.png";
+import logo55 from "../Assets/logo5.png";
+import logo66 from "../Assets/logo6.png";
+import logo77 from "../Assets/logo7.png";
+import logo88 from "../Assets/logo8.png";
+import logo99 from "../Assets/logo9.png";
+import logo101 from "../Assets/logo10.png";
 export const qa = [
   {
     question:
@@ -194,5 +204,57 @@ export const mainContainerIcons = [
     height: 160,
     description: "3 Working Modes",
     color: "#707277",
+  },
+];
+export const mainFeaturesIcons = [
+  {
+    id: 11,
+    img: logo11,
+    description: "100% Safe and Reliable",
+  },
+  {
+    id: 12,
+    img: logo22,
+    description: "One Touch UV-C Irradiation",
+  },
+  {
+    id: 13,
+    img: logo33,
+    description: "Kills 99.9% of Bacteria",
+  },
+  {
+    id: 14,
+    img: logo44,
+    description: "360 Degree Surface Disinfection",
+  },
+  {
+    id: 15,
+    img: logo55,
+    description: "Built-in induction Night Light",
+  },
+  {
+    id: 16,
+    img: logo66,
+    description: "18l UV Sterilizer",
+  },
+  {
+    id: 17,
+    img: logo77,
+    description: "UV Light + Ozone Layer",
+  },
+  {
+    id: 18,
+    img: logo88,
+    description: "Air inflow Filtaration",
+  },
+  {
+    id: 19,
+    img: logo99,
+    description: "ABS + Stainless Steel",
+  },
+  {
+    id: 20,
+    img: logo101,
+    description: "4 working modes",
   },
 ];
