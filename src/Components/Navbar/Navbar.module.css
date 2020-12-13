@@ -46,7 +46,7 @@
 .navLinks {
   display: flex;
   justify-content: space-evenly;
-  width: 50vw;
+  width: 60vw;
 }
 .navLinks > a {
   text-decoration: none;

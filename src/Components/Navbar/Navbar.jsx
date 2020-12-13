@@ -19,10 +19,10 @@ function Navbar({ children }) {
         <div className={classes.mainNavLogo}>
           <img src={logo} alt="steralogo" />
         </div>
-        <div className={classes.mainNavLinks}>
+        {/* <div className={classes.mainNavLinks}>
           <a href="#aboutus">About us</a>
           <Link to="/contact">Contact us</Link>
-        </div>
+        </div> */}
         <div className={classes.hamburger}>
           <img
             src={hamburger}
@@ -69,6 +69,8 @@ function Navbar({ children }) {
       </div>
       <div className={classes.navContainer}>
         <div className={classes.navLinks}>
+          <a href="#aboutus">About us</a>
+          <Link to="/contact">Contact us</Link>
           <a href="#product">Product</a>
           <a href="#features">Features</a>
           <a href="#specifications">Specifications</a>

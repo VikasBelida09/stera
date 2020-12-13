@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "./Knowmore.module.css";
 import logo from "../../Assets/steralogo.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import surface from "../../Assets/surface2.png";
 import Footer from "../Footer/Footer";
 import Divider from "../Divider/Divider";
-function knowmore() {
+function Knowmore() {
+  const topDivRef = useRef(null);
+  const history = useHistory();
+  useEffect(() => {
+    topDivRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
   return (
-    <div className={classes.knowMoreContainer}>
+    <div className={classes.knowMoreContainer} ref={topDivRef}>
       <div className={classes.knowMoreHeader}>
-        <img src={logo} alt="stera logo" />
+        <img src={logo} alt="stera logo" onClick={() => history.push("/")} />
         <Link to="/" className={classes.link}>{`< Back Home`}</Link>
       </div>
       <div className={classes.knowMoreBanner}>
@@ -85,7 +92,7 @@ function knowmore() {
           <Link to="/faq" className={classes.link}>
             <span className={classes.aboutUs}>FAQS</span>
           </Link>
-          <span className={classes.email}>Email us: stexxxjia@gmail.com</span>
+          <span className={classes.email}>Any queries: support@steracare.com</span>
         </div>
       </div>
       <Divider />
@@ -94,4 +101,4 @@ function knowmore() {
   );
 }
 
-export default knowmore;
+export default Knowmore;

@@ -34,7 +34,7 @@
   margin-top: -85vh;
 }
 .title {
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 800;
   color: #6a6a6a;
 }
@@ -48,7 +48,7 @@
 }
 .miniTitle,
 .miniBoldTitle {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 450;
   padding-left: 3vh;
   color: #737475;
@@ -58,15 +58,16 @@
   font-weight: bold;
 }
 .buyBtn {
-  width: 160px;
-  height: 46px;
+  width: 145px;
+  height: 40px;
   text-decoration: none;
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #5b90fb;
   color: #efe8e8;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   border: 1px solid #efe8e8;
   border-radius: 35px;

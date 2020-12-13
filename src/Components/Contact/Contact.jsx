@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classes from "./Contact.module.css";
 import logo from "../../Assets/steralogo.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import QuestionAnswer from "../QuestionAnswer/QuestionAnswer";
 import { qa } from "../../data/data";
 import Divider from "../Divider/Divider";
 function Contact() {
+  const history = useHistory();
+  const containerRef = useRef(null);
   const { pathname } = useLocation();
   let path = pathname.substr(1);
   const [hide, setHide] = useState(false);
+  useEffect(() => {
+    containerRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
   const Qa = qa.slice(0, 3).map((item) => {
     return (
       <QuestionAnswer
@@ -37,9 +44,9 @@ function Contact() {
     );
   });
   return (
-    <div className={classes.contact}>
+    <div className={classes.contact} ref={containerRef}>
       <div className={classes.contactHeader}>
-        <img src={logo} alt="stera logo" />
+        <img src={logo} alt="stera logo" onClick={() => history.push("/")} />
         <Link to="/" className={classes.link}>{`< Back Home`}</Link>
       </div>
       <div className={classes.breadCrumb}>
@@ -58,18 +65,18 @@ function Contact() {
         </Link>
       </div>
       {path === "contact" ? (
-          <iframe
-            title="google form"
-            src={`https://docs.google.com/forms/d/e/1FAIpQLSfXj2csDUO6DjXGeOAz0taL_iTUR85UuhmdkJvdFIjwMUsQCQ/viewform?embedded=true`}
-            frameBorder="0"
-            marginHeight="0"
-            marginWidth="0"
-            className={classes.googleForm}
-            border="0"
-            style={{overflowX:"hidden"}}
-          >
-            Loading...
-          </iframe>
+        <iframe
+          title="google form"
+          src={`https://docs.google.com/forms/d/e/1FAIpQLSfXj2csDUO6DjXGeOAz0taL_iTUR85UuhmdkJvdFIjwMUsQCQ/viewform?embedded=true`}
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          className={classes.googleForm}
+          border="0"
+          style={{ overflowX: "hidden" }}
+        >
+          Loading...
+        </iframe>
       ) : (
         <>
           {Qa}
@@ -81,7 +88,7 @@ function Contact() {
             >{`See More >`}</span>
           )}
           {hide && QaFull}
-          <p className={classes.email}>Email us: stexxxjia@gmail.com</p>
+          <p className={classes.email}>Any queries: support@steracare.com</p>
         </>
       )}
       <Divider />

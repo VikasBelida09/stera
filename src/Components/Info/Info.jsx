@@ -17,10 +17,10 @@ function Info() {
       </div>
       <div className={classes.infoFrontContainer}>
         <div className={classes.infoInner}>
-          <span title="UVD" className={classes.title}>
-            <strong className={classes.uv}>UV</strong> Disinfection Shield
+          <span className={classes.title}>
+            Stera <strong className={classes.uv}>UV</strong> Disinfection Shield
           </span>
-          <span className={classes.miniTitle}>Science that protect</span>
+          <span className={classes.miniTitle}>Your 360 degree protector</span>
           <a href="#product" className={classes.buyBtn}>
             BUY NOW
           </a>
@@ -41,7 +41,7 @@ function Info() {
             />
             <IconDisplayer
               img={logo3}
-              description="Kills 99.9% of Bacteria"
+              description="Kills 99.9% of Virus"
               height={80}
               width={80}
               ml={"1vh"}
@@ -54,15 +54,17 @@ function Info() {
               ml={"1vh"}
             />
           </div>
-          <span title="kills" className={classes.miniBoldTitle}>
-            Kills <strong className={classes.uv}>99.9%</strong> of viruses
-            including Corona Virus
+          <span className={classes.miniBoldTitle}>
+            Kills <span className={classes.uv}>Corona</span> and all other
+            pathogens
           </span>
           <div className={classes.infoFooter}>
             <span className={classes.bottomTitle}>
-              USFDA approved,{" "}
-              <strong className={classes.uv}>Your 360 degree protector</strong>{" "}
-              from all viruses
+              Tested in
+              <strong className={classes.uv}>
+              {" "}USFDA approved & NABL{" "}
+              </strong>
+              accreated laboratory
             </span>
             <div className={classes.linksToSocial}>
               <a
@@ -90,17 +92,17 @@ function Info() {
       <div className={classes.mobileView}>
         <div className={classes.textBtnContainer}>
           <span title="UVD" className={classes.title}>
-            <strong className={classes.uv}>UV</strong> Disinfection Shield
+            Stera <strong className={classes.uv}>UV</strong> Disinfection Shield
           </span>
           <a href="#product" className={classes.buyBtn}>
             BUY NOW
           </a>
         </div>
-        <span className={classes.miniTitle}>Science that protect</span>
+        <span className={classes.miniTitle}>Your 360 degree protector</span>
         <span title="kills" className={classes.miniBoldTitle}>
-            Kills <strong className={classes.uv}> 99.9%</strong> of viruses
-            including Corona Virus
-          </span>
+          Kills <span className={classes.uv} style={{marginLeft:'5px', marginRight:'5px'}}>{" "} corona</span> and all
+          other pathogens
+        </span>
         <div className={classes.features}>
           <IconDisplayer
             img={logo1}
@@ -122,7 +124,7 @@ function Info() {
           />
           <IconDisplayer
             img={logo3}
-            description="Kills 99.9% of Bacteria"
+            description="Kills 99.9% of Virus"
             height={100}
             width={80}
             ml={"1vh"}

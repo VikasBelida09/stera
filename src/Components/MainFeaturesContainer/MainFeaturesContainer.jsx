@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import stera from "../../Assets/steramain.png";
 import ImageTextContainer from "../ImageTextContainer/ImageTextContainer";
 import classes from "./MainFeaturesContainer.module.css";
@@ -6,15 +6,22 @@ import logo from "../../Assets/steralogo.png";
 import svg1 from "../../Assets/makeup.svg";
 import svg2 from "../../Assets/baby-cutlery.svg";
 import svg3 from "../../Assets/feeding-bottle.svg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import IconDisplayer from "../IconDisplayer/IconDisplayer";
 import top from "../../Assets/Group21.svg";
 import { data, mainContainerIcons } from "../../data/data";
 function MainFeaturesContainer() {
+  const moreFeaturesContainerRef=useRef()
+  const history=useHistory()
+  useEffect(()=>{
+    moreFeaturesContainerRef.current.scrollIntoView({
+      behaviour:'smooth'
+    })
+  },[])
   return (
-    <div id="knowMoreTop">
+    <div id="knowMoreTop" ref={moreFeaturesContainerRef}>
       <div className={classes.mainFeaturesContainerHeader}>
-        <img src={logo} alt="stera logo" />
+        <img src={logo} alt="stera logo" onClick={()=>history.push('/')}/>
         <Link to="/" className={classes.link}>{`< Back Home`}</Link>
       </div>
       <div className={classes.mainFeaturesContainerBanner}>

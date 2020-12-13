@@ -10,7 +10,7 @@ import logo11 from "../Assets/logo1.png";
 import logo22 from "../Assets/logo2.png";
 import logo33 from "../Assets/logo3.png";
 import logo44 from "../Assets/logo4.png";
-import logo55 from "../Assets/logo5.png";
+// import logo55 from "../Assets/logo5.png";
 import logo66 from "../Assets/logo6.png";
 import logo77 from "../Assets/logo7.png";
 import logo88 from "../Assets/logo8.png";
@@ -224,18 +224,18 @@ export const mainFeaturesIcons = [
   {
     id: 13,
     img: logo33,
-    description: "Kills 99.9% of Bacteria",
+    description: "Kills 99.9% of Virus",
   },
   {
     id: 14,
     img: logo44,
     description: "360 Degree Surface Disinfection",
   },
-  {
-    id: 15,
-    img: logo55,
-    description: "Built-in induction Night Light",
-  },
+  // {
+  //   id: 15,
+  //   img: logo55,
+  //   description: "Built-in induction Night Light",
+  // },
   {
     id: 16,
     img: logo66,

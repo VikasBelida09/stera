@@ -105,11 +105,15 @@
   display: flex;
 }
 .buyBtn {
-  width: 180px;
+  width: 145px;
+  height: 40px;
   background-color: #5b90fb;
   color: #efe8e8;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #efe8e8;
   border-radius: 35px;
   margin-left: 20%;
@@ -261,9 +265,10 @@
   .amazon > img,
   .flipkart > img {
     height: 70px;
-    width: 140px; 
+    width: 140px;
   }
-  .amazon,.flipkart{
+  .amazon,
+  .flipkart {
     margin-bottom: 0vh;
   }
 }

@@ -4,7 +4,8 @@ import SubUsability from "../SubUsability/SubUsability";
 import classes from "./Usability.module.css";
 import top from "../../Assets/Group21.svg";
 import { subUsabilityImages } from "../../data/data";
-const email = `stexxxjia@gmail.com`;
+import { Link } from 'react-router-dom'
+const email = `support@steracare.com`;
 function Usability() {
   return (
     <div className={classes.usabilityContainer} id="usability">
@@ -25,9 +26,9 @@ function Usability() {
         ))}
       </div>
       <div className={classes.usabilityBottom}>
-        <a href="#FAQ">FAQS</a>
+        <Link to="/faq">FAQS</Link>
         <div className={classes.lastRow}>
-          <h4>{`Email us: ${email}`}</h4>
+          <h4>{`Any queries: ${email}`}</h4>
           <a href="#top">
             <img src={top} alt="top" />
           </a>
