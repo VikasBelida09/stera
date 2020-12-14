@@ -17,7 +17,7 @@ function Contact() {
       behavior: "smooth",
     });
   }, []);
-  const Qa = qa.slice(0, 3).map((item) => {
+  const Qa = qa.slice(0, 4).map((item) => {
     return (
       <QuestionAnswer
         key={item.question}
@@ -26,11 +26,13 @@ function Contact() {
         answer2={item?.answer2}
         answer3={item?.answer3}
         answer4={item?.answer4}
+        link4={item?.link}
         answer5={item?.answer5}
+        answer6={item?.answer6}
       />
     );
   });
-  const QaFull = qa.slice(4).map((item) => {
+  const QaFull = qa.slice(5).map((item) => {
     return (
       <QuestionAnswer
         key={item.question}
@@ -39,7 +41,9 @@ function Contact() {
         answer2={item?.answer2}
         answer3={item?.answer3}
         answer4={item?.answer4}
+        link4={item?.link}
         answer5={item?.answer5}
+        answer6={item?.answer6}
       />
     );
   });
