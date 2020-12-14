@@ -1,14 +1,17 @@
 import React from 'react'
 import classes from './SubUsability.module.css'
-function SubUsability({img,title,description}) {
+function SubUsability({img,title,description,imgStyles,anotherTitle,anotherDescription,smallObjects}) {
     return (
         <div className={classes.subUsability}>
             <div className={classes.image}>
-                <img src={img} alt={title}/>
+                <img src={img} alt={title} style={imgStyles}/>
             </div>
             <div className={classes.descriptionContainer}>
                 <h5>{title}</h5>
-                <p>{description}</p>    
+                <p style={{ marginBottom:'0.2vh', color:'black'}}>{smallObjects}</p>
+                <p>{description}</p>
+                <p style={{ marginBottom:'0.2vh', color:'black'}}>{anotherTitle}</p>
+                <p>{anotherDescription}</p>    
             </div>
         </div>
     )

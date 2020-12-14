@@ -5,7 +5,7 @@
   height: fit-content;
 }
 .image > img {
-  height: 25vh;
+  height: 26vh;
   max-height: 200px;
   object-fit: contain;
 }
@@ -23,21 +23,21 @@
   font-size: 26px;
   font-weight: bold;
   color: #5b90fb;
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 5px;
 }
 .descriptionContainer > p {
-  font-size: 23;
+  font-size: 14px;
   font-weight: 500;
   color: #85888d;
-  margin-top: 2vh;
-  width: 40vw;
+  width: 62vw;
+  margin-bottom: 0.4rem;
 }
 @media screen and (max-width: 480px) {
   .image > img {
-    height: 25vh;
-    width: 30vw;
-    object-fit: contain;
+    height: 280px;
+    width: 33vw;
+    /* object-fit: contain; */
   }
   .image {
     padding-bottom: auto;
@@ -47,12 +47,14 @@
   }
   .descriptionContainer > p {
     font-size: 12px;
-    width: 45vw;
+    width: 48vw;
+    padding-right: 10px;
   }
   .descriptionContainer {
     margin-top: 3vh;
   }
   .subUsability {
-    margin-bottom: -6vh;
+    /* margin-bottom: -6vh; */
+    max-height: 350px;
   }
 }

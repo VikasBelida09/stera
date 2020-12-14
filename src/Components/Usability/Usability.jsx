@@ -22,6 +22,10 @@ function Usability() {
             title={item.title}
             img={item.img}
             description={item.description}
+            imgStyles={item.imgStyles}
+            anotherDescription={item.anotherDescription}
+            anotherTitle={item.anotherTitle}
+            smallObjects={item.smallObjects}
           />
         ))}
       </div>

@@ -58,7 +58,7 @@
 }
 .answer,
 .aboutUVInfo {
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #2d2d2d;
   font-weight: 600;
@@ -81,11 +81,15 @@
 }
 @media screen and (max-width: 480px) {
   .aboutInfoContainer {
-    width: 85vw;
+    width: 90vw;
+  }
+  .aboutUsContianer{
+    background-image: none;
+    margin-bottom: 1vh;
   }
   .answer,
   .aboutUVInfo {
-    color: black;
+    color: #646567;
     font-weight: 600;
   }
   .answer,
@@ -97,5 +101,8 @@
   }
   .infoQuestion {
     font-weight: bolder;
+  }
+  .infoHeaderTitle{
+    font-size: 16px;
   }
 }

@@ -219,28 +219,41 @@ export const subUsabilityImages = [
     id: 1,
     title: "Household",
     img: image1,
-    description: `Clothes, Slippers, School Bags, Tv Remote, Toys, Keys, Bottles, Masks, 
-    Mobile phones, Laptop and ipads etc`,
+    description: `Ornaments (Rings, earrings), TV Remote, Keys, Mobile Phones,  Masks
+    Wallets, Pens, Waist Belts, Wristwatches/Digital watches, Pocket Combs, Power banks
+    Spectacles and Googles / Sunglasses.
+    `,
+    smallObjects: `Small Objects`,
+    anotherTitle: `Medium Objects`,
+    anotherDescription: `Ornaments (Necklace), Hat / Cap, Purse / Clutches, Handbag, iPads / Tablets, Water bottles, Routine groceries, Packaged food, Milk Packets, News Papers / Magazines.`,
   },
   {
     id: 2,
     title: "Commercial",
     img: image2,
-    description: `Loose currency & Coins, Pen, Notebooks, Product before selling them, 
-    Tools before starting work in factory.`,
+    description: `Cutleries like Spoons, Forks & Knife, Aprons, Paper napkins, Currency Notes, Pens
+    Bill Books`,
+    smallObjects: `Small Objects`,
+    anotherTitle: `Medium Objects`,
+    anotherDescription: `Glasses, Saucers, Take-Away Items, Packaged foods, Customer purchases and Packages`,
   },
   {
     id: 3,
     title: "Medical",
     img: image3,
-    description: `PPE such as, N95 Mask, Eye Goggles, Face shield, Sanitized PPE can be refused,
-    Medical Equipment like Intubation tubes`,
+    description: `Teethers, Soothers & Nipples, Nail Clippers, Small toys, Baby comb, Nasal Aspirator, 
+    Toothbrush, Thermometer`,
+    smallObjects: `Small Objects`,
+    anotherTitle: `Medium Objects`,
+    anotherDescription: `Feeding Bottles, Brest Pumps, Soft toys, Bathing accessories, Baby Cosmetics`,
   },
   {
     id: 4,
     title: "Salon & Spa",
     img: image4,
-    description: `Nail tools and other equipment, products before selling, sanitize and clean 
-    objects like towels, scissors`,
+    description: `Scissors, Comb and All other grooming accessories`,
+    smallObjects: `Small Objects`,
+    anotherTitle: `Medium Objects`,
+    anotherDescription: `Hair Water spray pump, Cosmetic items, Trimmers and Hair Blowers / Dryers`,
   },
 ];
