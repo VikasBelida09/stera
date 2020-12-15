@@ -35,8 +35,8 @@ function Product() {
             </Carousel>
           </div>
           <div className={cx(classes.broucherContainer, classes.deskViewBuy)}>
-            <span title="broucher">broucher</span>
-            <span title="certifications">certifications</span>
+            <span title="broucher">Broucher</span>
+            <span title="certifications">User Manual</span>
           </div>
         </div>
         <div className={classes.productRightView}>
