@@ -71,6 +71,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-top: 3px;
+  margin-bottom: 10px;
 }
 .productInfo {
   display: flex;
@@ -81,16 +82,17 @@
 }
 .subProdSpan {
   color: #6d6868;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: bold;
   width: 175px;
 }
 .subProdPara {
-  font-size: 18px;
+  font-size: 15px;
   width: 30vw;
   font-weight: 500;
   color: #85888d;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0.5rem;
 }
 .price {
   font-weight: bold;

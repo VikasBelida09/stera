@@ -26,8 +26,8 @@ function Knowmore() {
         <div className={classes.bannerContent}>
           <img src={logo} alt="logo" className={classes.bannerLogo} />
           <span className={classes.spanTitle}>
-            Kills <strong className={classes.blue}>99.9%</strong> of viruses
-            including Corona Virus
+            Kills <strong className={classes.blue}>Corona</strong> and all other
+            pathogens
           </span>
         </div>
       </div>
@@ -110,7 +110,9 @@ function Knowmore() {
               NABL & USFDA inspected laboratory with one of the most stringent
               testing protocols.
             </p>
-            <p className={classes.question} style={{fontWeight:600}}>Stera disinfection shield is ISO 15858 : 2016 and CE Certified. </p>
+            <p className={classes.question} style={{ fontWeight: 600 }}>
+              Stera disinfection shield is ISO 15858 : 2016 and CE Certified.{" "}
+            </p>
           </div>
           <Link to="/faq" className={classes.link}>
             <span className={classes.aboutUs}>FAQS</span>

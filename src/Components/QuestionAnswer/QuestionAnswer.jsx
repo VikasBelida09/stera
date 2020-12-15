@@ -22,7 +22,7 @@ function QuestionAnswer({
         {answer4 && <p className={classes.answerPara}>{answer4}</p>}
         {link4 && (
           <p className={classes.answerPara}>
-            <Link to={link4}>{link4}</Link>
+            <Link target="_blank" to={link4}>{link4}</Link>
           </p>
         )}
         {answer5 && <p className={classes.answerPara}>{answer5}</p>}

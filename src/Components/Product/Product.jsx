@@ -20,16 +20,16 @@ function Product() {
         <div className={classes.productLeftView}>
           <div className={classes.carouselContainer}>
             <Carousel>
-              <Carousel.Item  className={classes.carouselItemHeight}>
+              <Carousel.Item className={classes.carouselItemHeight}>
                 <img className="d-block w-100" src={product1} alt="prod1" />
               </Carousel.Item>
-              <Carousel.Item >
+              <Carousel.Item>
                 <img className="d-block w-100" src={product2} alt="prod2" />
               </Carousel.Item>
-              <Carousel.Item >
+              <Carousel.Item>
                 <img className="d-block w-100" src={product3} alt="prod3" />
               </Carousel.Item>
-              <Carousel.Item >
+              <Carousel.Item>
                 <img className="d-block w-100" src={product4} alt="prod4" />
               </Carousel.Item>
             </Carousel>
@@ -41,6 +41,9 @@ function Product() {
         </div>
         <div className={classes.productRightView}>
           <div>
+            <span className={classes.disinfect}>
+              Stera {" "}
+            </span>
             <span title="UV" className={classes.uv}>
               UV
             </span>
@@ -50,11 +53,12 @@ function Product() {
           </div>
           <div>
             <span className={classes.kills}>
-              Kills 99.9% of viruses including
+              Kills
             </span>
             <span title="cv" className={classes.cv}>
               corona virus
             </span>
+            <span> and all other pathogens</span>
           </div>
 
           <div className={classes.mobileViewBuy}>
@@ -114,36 +118,94 @@ function Product() {
           <div className={classes.productInfo}>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
-                Color
+                Colour
               </span>
               <p className={classes.subProdPara}>White</p>
             </div>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
-                General
+                Capacity
               </span>
-              <p className={classes.subProdPara}>{`Types: Cleaning Tools 
-Materials: ABS,Stainless Steel`}</p>
+              <p className={classes.subProdPara}>{`16L`}</p>
             </div>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
-                Dimensions and Weight
+                Body
               </span>
-              <p className={classes.subProdPara}>{`Product weight: 5.0000 kg
-Package weight: 5.4000 kg
-Product size (L x W x H): 32.50 x 29.00 x 39.50 cm / 
-12.8 x 11.42 x 15.55 inches
-Package size (L x W x H): 35.00 x 30.00 x 40.00 cm /
-13.78 x 11.81 x 15.75 inches`}</p>
+              <p className={classes.subProdPara}>{`ABS, Stainless Steel`}</p>
             </div>
             <div className={classes.subProdInfo}>
               <span title="color" className={classes.subProdSpan}>
-                Package Contents
+                No of UV Lamps
+              </span>
+              <p className={classes.subProdPara}>{`2x11 W`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Lamp
               </span>
               <p
                 className={classes.subProdPara}
-              >{`Package Contents: 1 x Disinfection Cabinet, 2 x 
-Stainless Steel Shelf, 1 x Chinese Manua`}</p>
+              >{`Philips UV-C Tube (Cab base G5)`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Product Dimensions
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`325 x 290 x 395 mm (Portable)`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Weight
+              </span>
+              <p className={classes.subProdPara}>{`5.7 Kg (Light Weight)`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Warranty
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`1 Year on Product & 6 Months on Lamps`}</p>
+            </div>
+          </div>
+          <span className={classes.specifications} id="specifications">
+            Features
+          </span>
+          <div className={classes.productInfo}>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Display Type
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`Digital display with sensitive touch panel`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Control Panel
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`5 sensitive touch buttons`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                Timer
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`Preset 3min & 5min Electronic Timer`}</p>
+            </div>
+            <div className={classes.subProdInfo}>
+              <span title="color" className={classes.subProdSpan}>
+                User UV-C Protection
+              </span>
+              <p
+                className={classes.subProdPara}
+              >{`Auto-cutoff protection when door opened`}</p>
             </div>
           </div>
           <span

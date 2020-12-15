@@ -239,7 +239,7 @@ export const subUsabilityImages = [
   },
   {
     id: 3,
-    title: "Medical",
+    title: "Baby Care",
     img: image3,
     description: `Teethers, Soothers & Nipples, Nail Clippers, Small toys, Baby comb, Nasal Aspirator, 
     Toothbrush, Thermometer`,
