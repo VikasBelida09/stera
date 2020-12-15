@@ -54,7 +54,7 @@ function Knowmore() {
             <p className={classes.questions}>
               About Stera UV Disinfection Shield
             </p>
-            <p className={classes.details} style={{ fontWeight: "650" }}>
+            <p className={classes.details}>
               We know that we all will shield ourselves better if we provide a
               proper shield for the daily use accessories. That is how the idea
               of UV disinfection shield evolved. A great deal of care and

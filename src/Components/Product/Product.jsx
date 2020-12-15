@@ -78,8 +78,8 @@ function Product() {
               </button>
             </div>
             <div className={classes.broucherContainer}>
-              <span title="broucher">broucher</span>
-              <span title="certifications">certifications</span>
+              <span title="broucher">Broucher</span>
+              <span title="certifications">User Manual</span>
             </div>
             {isHidden && (
               <div className={classes.buyLinks}>
