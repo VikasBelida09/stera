@@ -40,7 +40,7 @@
     opacity: 0.7;
 }
 .bannerLogo{
-    height:6vh;
+    /* height:28px; */
     object-fit: contain;
     margin-top: 14vh;
     margin-left: 1vw;
@@ -111,6 +111,7 @@
     }
     .bannerLogo{
         height:6vh;
+        object-fit: contain;
         width:40vw;
         margin-top: 8vh;
         margin-left: -15vw;

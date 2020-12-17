@@ -11,6 +11,7 @@
 }
 .mainNavLogo > img {
   height: 28px;
+  object-fit: contain;
 }
 .navBarcontainer {
   max-width: 100%;

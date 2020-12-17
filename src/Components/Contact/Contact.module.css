@@ -65,11 +65,31 @@
   text-align: center;
 }
 .googleForm {
-  height: 186vh;
+  height: 182vh;
   width: 800px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
+@media screen and (min-height:700px){
+  .googleForm{
+    height: 160vh;
+  }
+}
+@media screen and (min-height:800px){
+ .googleForm{
+   height: 144vh;
+ }
+}
+@media screen and (min-height:900px){
+  .googleForm{
+    height: 120vh;
+  }
+ }
+ @media screen and (min-height:1100px){
+  .googleForm{
+    height: 100vh;
+  }
+ }
 @media screen and (max-width: 780px) {
   .breadCrumb {
     width: 35vw;
