@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import classes from "./Contact.module.css";
 import logo from "../../Assets/steralogo.png";
-import { Link, useHistory, useLocation } from "react-router-dom";
+import { Link, useHistory, useLocation, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import QuestionAnswer from "../QuestionAnswer/QuestionAnswer";
 import { qa } from "../../data/data";
