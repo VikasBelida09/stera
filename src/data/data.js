@@ -61,7 +61,7 @@ export const qa = [
     answer2: `How to test the efficacy of the UV shield: Take two pink colour dosimeter strips and stick them on the top and bottom of any object and place inside the cabinet for disinfection and observe the colour change. After 5 minutes, the pink colour strip turns into yellow colour which mean it is exposed to the UV C dosage of 100 mJ/cm2 where no virus can survive. Not just Corona virus, but Stera UV shield kills every pathogen of any level. `,
     answer3: `You can see the testing process in the following link:
     `,
-    link: `www.youtube.com/stera/disinfectionprocess`,
+    link: `https://www.youtube.com/stera/disinfectionprocess`,
   },
   {
     question: `Where can we place this product in our homes?`,

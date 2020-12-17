@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./QuestionAnswer.module.css";
-import { Link } from 'react-router-dom'
 function QuestionAnswer({
   question,
   answer1,
@@ -22,7 +21,7 @@ function QuestionAnswer({
         {answer4 && <p className={classes.answerPara}>{answer4}</p>}
         {link4 && (
           <p className={classes.answerPara}>
-            <Link target="_blank" to={link4}>{link4}</Link>
+            <a href={link4}>{link4}</a>
           </p>
         )}
         {answer5 && <p className={classes.answerPara}>{answer5}</p>}
