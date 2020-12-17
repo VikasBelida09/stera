@@ -92,7 +92,7 @@ function Contact() {
             >{`See More >`}</span>
           )}
           {hide && QaFull}
-          <p className={classes.email}>Any queries: support@steracare.com</p>
+          <p className={classes.email}>For any queries: support@steracare.com</p>
         </>
       )}
       <Divider />

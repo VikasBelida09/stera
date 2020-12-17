@@ -32,7 +32,7 @@ function Usability() {
       <div className={classes.usabilityBottom}>
         <Link to="/faq">FAQS</Link>
         <div className={classes.lastRow}>
-          <h4>{`Any queries: ${email}`}</h4>
+          <h4>{`For any queries: ${email}`}</h4>
           <a href="#top">
             <img src={top} alt="top" />
           </a>

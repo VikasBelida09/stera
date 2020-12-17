@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { HashLink as HLink } from "react-router-hash-link";
 function Footer() {
   return (
+    <>
     <div className={classes.footerContainer}>
       <div className={classes.footerLeft}>
         <h4>Quick Links</h4>
@@ -77,6 +78,10 @@ function Footer() {
         </div>
       </div>
     </div>
+    <div className={classes.developedByContainer}>
+      <span>Developed By: Akko Worldwide Communication</span>  
+    </div>
+    </>
   );
 }
 

@@ -9,6 +9,7 @@
 }
 .usabilityTop {
   display: flex;
+  margin-bottom: 20px;
 }
 .surface {
   height: 50vh;
@@ -53,6 +54,7 @@
   margin-right: 5vw;
   font-weight: 400;
   color: #f3e8e8;
+  font-size: 16px;
 }
 .lastRow > a {
   position: absolute;

@@ -26,8 +26,8 @@ function Knowmore() {
         <div className={classes.bannerContent}>
           <img src={logo} alt="logo" className={classes.bannerLogo} />
           <span className={classes.spanTitle}>
-            Kills <strong className={classes.blue}>99.9%</strong> of viruses
-            including Corona Virus
+            Kills <strong className={classes.blue}>Corona </strong> 
+            and all other pathogens
           </span>
         </div>
       </div>
@@ -97,7 +97,7 @@ function Knowmore() {
             <span className={classes.aboutUs}>FAQS</span>
           </Link>
           <span className={classes.email}>
-            Any queries: support@steracare.com
+            For any queries: support@steracare.com
           </span>
         </div>
       </div>

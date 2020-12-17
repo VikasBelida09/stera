@@ -43,7 +43,7 @@
     height:6vh;
     object-fit: contain;
     margin-top: 14vh;
-    margin-left: -1vw;
+    margin-left: 1vw;
 }
 .blue{
     color: #5B90FB;
@@ -55,7 +55,7 @@
     justify-content: space-between;
 }
 .spanTitle{
-    margin-left: 5vw;
+    margin-left: 6vw;
     font-size: 14px;
     font-weight: 650;
     margin-bottom: 2vh;

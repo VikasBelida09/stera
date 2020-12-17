@@ -4,6 +4,16 @@
   background-color: #262626;
   color: #f3e8e8;
   flex-wrap: wrap;
+  padding-top: 1vh;
+}
+.developedByContainer{
+  background-color: #262626;
+  color: #f3e8e8;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2vh;
+  font-weight: 500;
+  border: 0px
 }
 .footerLeft {
   display: flex;
@@ -37,7 +47,10 @@
   font-weight: 600;
 }
 .footerMiddle3 > a:nth-child(2) {
-  margin-top: 25px;
+  margin-top: 10px;
+}
+.footerMiddle3 > a:nth-child(1){
+  margin-top: -15px;
 }
 .footerMiddle1 > a,
 .footerMiddle2 > a,
