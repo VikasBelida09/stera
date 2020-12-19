@@ -44,9 +44,10 @@
   flex: 0.5;
   margin-left: 1vw;
 }
-.productLeftView{
+.productLeftView {
   justify-content: center;
   align-content: center;
+  margin-top: -50px;
 }
 .uv {
   color: #5b90fb;
@@ -128,7 +129,7 @@
   margin-top: 1vh;
   cursor: pointer;
 }
-.broucher{
+.broucher {
   margin-left: 40px;
   margin-top: 10px;
   color: #5b90fb;
@@ -206,7 +207,7 @@
   .price {
     font-size: 12px;
   }
-  .buy{
+  .buy {
     margin-top: 2vh;
   }
   .amount {
@@ -235,6 +236,9 @@
   .productLeftView,
   .productRightView {
     flex: 1;
+  }
+  .productLeftView {
+    margin-top: 0px;
   }
   .broucherContainer {
     margin-top: 1vh;
@@ -288,7 +292,7 @@
   .flipkart {
     margin-bottom: 0vh;
   }
-  .broucher{
+  .broucher {
     font-size: 12px;
   }
 }

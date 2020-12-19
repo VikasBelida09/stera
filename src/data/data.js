@@ -213,6 +213,16 @@ export const mainFeaturesIcons = [
     img: logo101,
     description: "4 working modes",
   },
+  {
+    id: 21,
+    img: logo101,
+    description: "4 working modes",
+    iconContainerStyles: {
+      visibility: "hidden",
+      height: "0",
+      widht: "0",
+    },
+  },
 ];
 export const subUsabilityImages = [
   {

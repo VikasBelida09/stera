@@ -18,6 +18,7 @@ function MainFeatures() {
             key={mainFeatureIcon.id}
             img={mainFeatureIcon.img}
             description={mainFeatureIcon.description}
+            iconContainerStyles={mainFeatureIcon.iconContainerStyles}
           />
         ))}
         <Link to="/aboutFeatures" className={classes.hide}>
