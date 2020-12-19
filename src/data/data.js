@@ -181,7 +181,7 @@ export const mainFeaturesIcons = [
   {
     id: 14,
     img: logo44,
-    description: "360 Degree Surface Disinfection",
+    description: "360\u00b0 Surface Disinfection",
   },
   // {
   //   id: 15,

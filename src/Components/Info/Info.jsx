@@ -20,7 +20,7 @@ function Info() {
           <span className={classes.title}>
             Stera <strong className={classes.uv}>UV</strong> Disinfection Shield
           </span>
-          <span className={classes.miniTitle}>Your 360 degree protector</span>
+          <span className={classes.miniTitle}>Your 360&deg; protector</span>
           <a href="#product" className={classes.buyBtn}>
             BUY NOW
           </a>
@@ -48,7 +48,7 @@ function Info() {
             />
             <IconDisplayer
               img={logo4}
-              description="360 Degree Surface Disinfection"
+              description={`360\u00b0 Surface Disinfection`}
               height={80}
               width={80}
               ml={"1vh"}
@@ -98,7 +98,7 @@ function Info() {
             BUY NOW
           </a>
         </div>
-        <span className={classes.miniTitle}>Your 360 degree protector</span>
+        <span className={classes.miniTitle}>Your 360&deg; protector</span>
         <span title="kills" className={classes.miniBoldTitle}>
           Kills <span className={classes.uv} style={{marginLeft:'5px', marginRight:'5px'}}>{" "} corona</span> and all
           other pathogens
@@ -112,6 +112,10 @@ function Info() {
             ml={"1vh"}
             textWidth={120}
             textMt={"-3vh"}
+            iconContainerStyles={{
+              marginTop:'1vh',
+              marginBottom:'0vh'
+            }}
           />
           <IconDisplayer
             img={logo2}
@@ -121,6 +125,10 @@ function Info() {
             ml={"1vh"}
             textWidth={120}
             textMt={"-3vh"}
+            iconContainerStyles={{
+              marginTop:'0vh',
+              marginBottom:'0vh'
+            }}
           />
           <IconDisplayer
             img={logo3}
@@ -130,15 +138,23 @@ function Info() {
             ml={"1vh"}
             textWidth={120}
             textMt={"-3vh"}
+            iconContainerStyles={{
+              marginTop:'0vh',
+              marginBottom:'0vh'
+            }}
           />
           <IconDisplayer
             img={logo4}
-            description="360 Degree Surface Disinfection"
+            description={`360\u00b0 Surface Disinfection`}
             height={100}
             width={100}
             ml={"1vh"}
             textWidth={120}
             textMt={"-3vh"}
+            iconContainerStyles={{
+              marginTop:'0vh',
+              marginBottom:'0vh'
+            }}
           />
         </div>
       </div>

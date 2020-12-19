@@ -103,7 +103,7 @@
     .surface > img{
         height:36vh;
         width: 60vw;
-        margin-left: 10vw;
+        /* margin-left: 5vw; */
     }
     .knowMoreBanner{
         height:40vh;

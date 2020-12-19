@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./IconDisplayer.module.css";
-function IconDisplayer({ img, description, height, width, ml, color,textWidth,textMt }) {
+function IconDisplayer({ img, description, height, width, ml, color,textWidth,textMt,iconContainerStyles={} }) {
   return (
-    <div className={classes.iconContainer}>
+    <div className={classes.iconContainer} style={iconContainerStyles}>
       <img
         src={img}
         alt={description}

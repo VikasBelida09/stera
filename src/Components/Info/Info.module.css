@@ -111,7 +111,7 @@
 }
 @media screen and (max-width: 480px) {
   .surface1 {
-    height: 30vh;
+    height: 150px;
     object-position: 20% 10%;
   }
   .miniBoldTitle {
@@ -128,7 +128,7 @@
     margin-top: 5vh;
   }
   .title {
-    font-size: 19px;
+    font-size: 17px;
   }
   .miniTitle {
     font-size: 14px;
@@ -143,10 +143,10 @@
   }
   .infoContainer {
     background-image: url("../../Assets/steracs.png");
-    background-size: 100% 55%;
+    background-size: 100% 45vh;
   }
   .infoBackContainer {
-    background-size: 100% 55%;
+    background-size: 100% 45vh;
   }
   .linksToSocial,
   .infoFrontContainer,
@@ -161,6 +161,8 @@
   .textBtnContainer {
     display: flex;
     padding-left: 3vw;
+    margin-top: 1vh;
+    padding-right: 2.4vw;
   }
   .features {
     grid-template-columns: auto auto;

@@ -54,7 +54,7 @@
   margin-right: 5vw;
   font-weight: 400;
   color: #f3e8e8;
-  font-size: 16px;
+  font-size: 20px;
 }
 .lastRow > a {
   position: absolute;
@@ -85,6 +85,7 @@
   .usabilityMiddle {
     margin-top: -18vh;
     padding-top: 0px;
+    padding-right: 1vw;
   }
   .usabilityBottom{
     font-size: 18px;
