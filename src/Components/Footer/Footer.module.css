@@ -14,9 +14,9 @@
   font-weight: 500;
   border: 0px;
   font-size: 14px;
+  justify-content: center;
 }
 .developedByContainer > span {
-  margin-left: 20vw;
   margin-top: 3vh;
 }
 .footerLeft {
