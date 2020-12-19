@@ -34,16 +34,10 @@ function Product() {
               </Carousel.Item>
             </Carousel>
           </div>
-          <div className={cx(classes.broucherContainer, classes.deskViewBuy)}>
-            <span title="broucher">Broucher</span>
-            <span title="certifications">User Manual</span>
-          </div>
         </div>
         <div className={classes.productRightView}>
           <div>
-            <span className={classes.disinfect}>
-              Stera {" "}
-            </span>
+            <span className={classes.disinfect}>Stera </span>
             <span title="UV" className={classes.uv}>
               UV
             </span>
@@ -52,23 +46,20 @@ function Product() {
             </span>
           </div>
           <div>
-            <span className={classes.kills}>
-              Kills
-            </span>
+            <span className={classes.kills}>Kills</span>
             <span title="cv" className={classes.cv}>
               corona virus
             </span>
             <span> and all other pathogens</span>
           </div>
-
           <div className={classes.mobileViewBuy}>
             <span title="price" className={classes.price}>
               Price
             </span>
+            <span title="amount" className={classes.amount}>
+              Rs 9,999
+            </span>
             <div className={classes.buy}>
-              <span title="amount" className={classes.amount}>
-                Rs 9,999
-              </span>
               <button
                 className={classes.buyBtn}
                 onClick={() => setIsHidden(true)}
@@ -76,10 +67,12 @@ function Product() {
               >
                 BUY NOW
               </button>
-            </div>
-            <div className={classes.broucherContainer}>
-              <span title="broucher">Broucher</span>
-              <span title="certifications">User Manual</span>
+              <div
+                className={classes.broucher}
+                style={isHidden ? { marginLeft: "0px" } : {}}
+              >
+                <span>Broucher</span>
+              </div>
             </div>
             {isHidden && (
               <div className={classes.buyLinks}>
@@ -208,16 +201,13 @@ function Product() {
               >{`Auto-cutoff protection when door opened`}</p>
             </div>
           </div>
-          <span
-            title="price"
-            className={cx(classes.price, classes.deskViewBuy)}
-          >
-            Price
-          </span>
-          <div className={cx(classes.buy, classes.deskViewBuy)}>
-            <span title="amount" className={classes.amount}>
-              Rs 9,999
+          <div className={cx(classes.subProdInfo, classes.deskViewBuy)}>
+            <span className={cx(classes.subProdSpan, classes.price)}>
+              Price
             </span>
+            <p className={cx(classes.subProdPara, classes.amount)}>Rs 9,999</p>
+          </div>
+          <div className={cx(classes.buy, classes.deskViewBuy)}>
             <button
               className={classes.buyBtn}
               onClick={() => setIsHidden(true)}
@@ -225,6 +215,12 @@ function Product() {
             >
               BUY NOW
             </button>
+            <div
+              className={classes.broucher}
+              style={isHidden ? { marginLeft: "0px" } : {}}
+            >
+              <span title="broucher">Broucher</span>
+            </div>
           </div>
         </div>
       </div>

@@ -100,8 +100,9 @@
   color: #545353;
 }
 .amount {
-  font-size: 37px;
+  font-size: 24px;
   font-weight: bold;
+  color: #545353;
 }
 .buy {
   display: flex;
@@ -118,9 +119,15 @@
   align-items: center;
   border: 1px solid #efe8e8;
   border-radius: 35px;
-  margin-left: 20%;
   outline-width: 0;
+  margin-left: -0.5vw;
+  margin-top: 1vh;
   cursor: pointer;
+}
+.broucher{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #5b90fb;
 }
 .miniDivider {
   height: 8px;
@@ -195,8 +202,13 @@
   .price {
     font-size: 12px;
   }
+  .buy{
+    margin-top: 2vh;
+  }
   .amount {
-    font-size: 18px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-bottom: 1vh;
   }
   .carouselContainer > img {
     width: 100vw !important;
@@ -208,7 +220,6 @@
     width: 45vw;
   }
   .buyBtn {
-    margin-left: 80px;
     width: 100px;
     height: 34px;
     font-size: 14px;
@@ -251,7 +262,7 @@
     font-style: 14px;
     font-weight: bolder;
     margin-bottom: 3vh;
-    margin-top: 4vh;
+    margin-top: 2vh;
   }
   .subProdSpan,
   .subProdPara {
@@ -272,5 +283,8 @@
   .amazon,
   .flipkart {
     margin-bottom: 0vh;
+  }
+  .broucher{
+    font-size: 12px;
   }
 }
