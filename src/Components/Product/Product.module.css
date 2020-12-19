@@ -44,6 +44,9 @@
   flex: 0.5;
   margin-left: 1vw;
 }
+.productLeftView{
+  justify-content: center;
+}
 .uv {
   color: #5b90fb;
   font-size: 39px;
