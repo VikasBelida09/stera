@@ -70,11 +70,11 @@ function Navbar({ children }) {
       <div className={classes.navContainer}>
         <div className={classes.navLinks}>
           <a href="#aboutus">About us</a>
-          <Link to="/contact">Contact us</Link>
           <a href="#product">Product</a>
           <a href="#features">Features</a>
           <a href="#specifications">Specifications</a>
           <a href="#usability">Usability</a>
+          <Link to="/contact">Contact us</Link>
         </div>
       </div>
       <main className={classes.child}>{children}</main>
