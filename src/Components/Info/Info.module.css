@@ -109,6 +109,7 @@
 .mobileView {
   visibility: hidden;
 }
+
 @media screen and (max-width: 480px) {
   .surface1 {
     height: 150px;
@@ -144,6 +145,7 @@
   .infoContainer {
     background-image: url("../../Assets/steracs.png");
     background-size: 100% 45vh;
+    min-height: 100vh;
   }
   .infoBackContainer {
     background-size: 100% 45vh;
@@ -157,6 +159,7 @@
     /* display: flex; */
     visibility: visible;
     margin-top: -60vh;
+    height: 400px;
   }
   .textBtnContainer {
     display: flex;
@@ -167,5 +170,14 @@
   .features {
     grid-template-columns: auto auto;
     margin-left: 12vw;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .infoContainer {
+    height: 110vh;
+  }
+  .mobileView {
+    margin-top: -70vh;
   }
 }

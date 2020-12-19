@@ -46,6 +46,7 @@
 }
 .productLeftView{
   justify-content: center;
+  align-content: center;
 }
 .uv {
   color: #5b90fb;
